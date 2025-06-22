@@ -544,6 +544,20 @@ h1, h2, h3, h4, label, input, a, ul, li {
   height: 5rem;
   background: #CB0000;
   border: 0.1rem solid #CB0000;
+  /* active状態 */
+}
+.hamburger.active .hamburger-line {
+  background: transparent;
+}
+.hamburger.active .hamburger-line::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.hamburger.active .hamburger-line::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /* 三本線 */
@@ -561,42 +575,73 @@ h1, h2, h3, h4, label, input, a, ul, li {
   transition: 0.3s;
 }
 
-.hamburger-line::before,
-.hamburger-line::after {
+.hamburger-line::before, .hamburger-line::after {
   content: "";
   left: 0;
 }
-
 .hamburger-line::before {
   top: -1.2rem;
 }
-
 .hamburger-line::after {
   top: 1.2rem;
 }
 
-/* ナビゲーション（中身） */
-.header-menu {
+/* ハンバーガーメニュー */
+.hamburger-menu {
   position: fixed;
-  width: 30rem;
   top: 5rem;
   right: 0;
-  bottom: 0;
+  width: 30rem;
+  background: #CB0000;
   border: 0.1rem solid #CB0000;
-  overflow: hidden;
-  display: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  z-index: 999;
+  visibility: hidden;
 }
-
-.header-menu ul {
-  margin: 0;
-  padding: 36px;
-  text-align: center;
+.hamburger-menu.active {
+  visibility: visible;
+}
+.hamburger-menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
-  font-size: 24px;
+  margin: 0;
+}
+.hamburger-menu nav ul li a {
+  display: block;
+  padding: 1.5rem 0 1rem 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
+  text-decoration: none;
+  color: #ffffff;
+}
+.hamburger-menu nav ul li a:hover {
+  background-color: #000000;
 }
 
-.header-menu ul li:not(:last-of-type) {
-  margin-bottom: 36px;
+/* ハンバーガー背景 */
+.hamburger-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+.hamburger-bg.active {
+  visibility: visible;
 }
 
 .c__btn {

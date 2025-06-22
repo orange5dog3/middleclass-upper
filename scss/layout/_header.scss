@@ -98,8 +98,26 @@
     height: 5rem;
     background: $color-main;
     border: 0.1rem solid $color-main;
+
+    /* active状態 */
+    &.active {
+        .hamburger-line {
+            background: transparent;
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
 }
-  /* 三本線 */
+
+/* 三本線 */
 .hamburger-line,
 .hamburger-line::before,
 .hamburger-line::after {
@@ -113,48 +131,75 @@
     -webkit-transition: .3s;
     transition: .3s;
 }
-.hamburger-line::before,
-.hamburger-line::after {
-    content: "";
-    left: 0;
-}
-.hamburger-line::before {
-    top: -1.2rem;
-}
-.hamburger-line::after {
-    top: 1.2rem;
+
+.hamburger-line {
+    &::before,
+    &::after {
+        content: "";
+        left: 0;
+    }
+
+    &::before {
+        top: -1.2rem;
+    }
+
+    &::after {
+        top: 1.2rem;
+    }
 }
 
-/* ハンバーガーメニューactive状態 */
-.hamburger.active .hamburger-line {
-    background: transparent;
-}
-.hamburger.active .hamburger-line::before {
-    top: 0;
-    transform: rotate(45deg);
-}
-.hamburger.active .hamburger-line::after {
-    top: 0;
-    transform: rotate(-45deg);
-}
-  /* ナビゲーション（中身） */
-.header-menu {
+/* ハンバーガーメニュー */
+.hamburger-menu {
     position: fixed;
-    width: 30rem;
     top: 5rem;
     right: 0;
-    bottom: 0;
-    border: 0.1rem solid $color-primary;
-    overflow: hidden;
-    display: none;
+    width: 30rem;
+    background: $color-main;
+    border: 0.1rem solid $color-main;
+    transition: transform 0.3s ease;
+    z-index: 999;
+    visibility: hidden;
+    
+    &.active {
+        visibility: visible;
+
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        
+        li {
+            a {
+                display: block;
+                padding: 1.5rem 0 1rem 2rem;
+                @include text-style(1.8rem, calc(33/18));
+                text-decoration: none;
+                color: $color-white;
+                
+                &:hover {
+                    background-color: $color-black;
+                }
+            }
+        }
+    }
 }
-.header-menu ul {
-    margin: 0;
-    padding: 36px;
-    text-align: center;
-    list-style: none;
-    font-size: 24px;
-}
-.header-menu ul li:not(:last-of-type) {
-    margin-bottom: 36px;
+
+/* ハンバーガー背景 */
+.hamburger-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 998;
+    
+    &.active {
+        visibility: visible;
+    }
 }
