@@ -21,11 +21,12 @@
 @import "object/component/component";
 
 // Project
-@import "object/project/index-main";
+@import "object/project/index_main";
+@import "object/project/index_first-view";
 @import "object/project/index_message";
-@import "object/project/index-concept";
-@import "object/project/result-list";
-@import "object/project/result-details";
+@import "object/project/index_concept";
+@import "object/project/result_list";
+@import "object/project/result_details";
 
 // Utility
 @import "object/utility/utility";

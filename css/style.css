@@ -655,4 +655,52 @@ h1, h2, h3, h4, label, input, a, ul, li {
   color: #CB0000;
   background-color: #ffffff;
   border: 0.1rem solid #CB0000;
+}
+
+#first-view {
+  position: relative;
+}
+
+.first-view__title {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+.first-view__title h2 {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .first-view__title h2 {
+    font-size: 3rem;
+    line-height: 1.6666666667;
+  }
+}
+
+.first-view__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 80, 80, 0.5);
+}
+.first-view__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 80, 80, 0.5);
+  z-index: 1;
+}
+.first-view__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
