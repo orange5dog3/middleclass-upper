@@ -1,0 +1,160 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 11rem;
+    @include sp {
+        padding: 1rem 0 1rem 2rem;
+    }
+}
+
+.header-title {
+    a {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        width: 3.2rem;
+        @include sp {
+            margin-right: 0.5rem;
+            width: 2rem;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        h1{
+            @include text-style(2rem, calc(23/20));
+            @include sp {
+                @include text-style(1.3rem, calc(14/13));
+            }
+            span{
+                @include text-style(1.5rem, calc(23/15));
+                @include sp {
+                    @include text-style(1.3rem, calc(14/13));
+                }
+            }
+        }
+    }
+}
+
+.header-nav {
+    @include sp {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        a {
+            @include text-style(1.7rem, calc(33/17));
+            padding-inline: 0.5rem;
+            height: inherit;
+            text-decoration: none;
+            @include transition;
+            &:hover:not(.c__btn) {
+                @include hover-opacity;
+            }
+        }
+    }
+}
+
+.header-nav {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+.btn--header {
+    @include text-style(1.5rem, calc(33/15));
+    padding: 0.8rem 2.8rem!important;
+}
+
+/* hamburger menu */
+/* ハンバーガーメニュー */
+.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 7rem;
+    height: 5rem;
+    background: $color-main;
+    border: 0.1rem solid $color-main;
+}
+  /* 三本線 */
+.hamburger-line,
+.hamburger-line::before,
+.hamburger-line::after {
+    position: absolute;
+    left: 1.8rem;
+    top: 2.3rem;
+    width: 3.2rem;
+    height: 0.4rem;
+    background: $color-white;
+    border-radius: 0.2rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.hamburger-line::before,
+.hamburger-line::after {
+    content: "";
+    left: 0;
+}
+.hamburger-line::before {
+    top: -1.2rem;
+}
+.hamburger-line::after {
+    top: 1.2rem;
+}
+
+/* ハンバーガーメニューactive状態 */
+.hamburger.active .hamburger-line {
+    background: transparent;
+}
+.hamburger.active .hamburger-line::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.hamburger.active .hamburger-line::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+  /* ナビゲーション（中身） */
+.header-menu {
+    position: fixed;
+    width: 30rem;
+    top: 5rem;
+    right: 0;
+    bottom: 0;
+    border: 0.1rem solid $color-primary;
+    overflow: hidden;
+    display: none;
+}
+.header-menu ul {
+    margin: 0;
+    padding: 36px;
+    text-align: center;
+    list-style: none;
+    font-size: 24px;
+}
+.header-menu ul li:not(:last-of-type) {
+    margin-bottom: 36px;
+}
