@@ -3,3 +3,14 @@
 // 下層ページの見出し部分やパンくずリスト
 // 一覧ページのページネーション
 // サイト内で2回以上使うパーツが該当
+
+.c__btn {
+    border: 0.1rem solid $color-main;
+    color: $color-white;
+    background-color: $color-main;
+    @include transition;
+    &:hover {
+        @include hover-reversecolor;
+        border: 0.1rem solid $color-main;
+    }
+}

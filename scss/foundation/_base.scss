@@ -1,1 +1,46 @@
 // サイト内の共通設定
+
+html {
+    //375px~767px
+    font-size: 62.5%;
+    //768~1160px
+    @media(min-width: 768px) and (max-width: 1160px){
+      font-size: calc(10 / 1160 * 100vw);
+    }
+    //1160px~
+    @media (min-width: 1160px) {
+      font-size: 10px;
+    }
+    @media(max-width:375px) {
+      font-size: calc(10 /375 * 100vw);
+    }
+}
+
+body{
+    font-weight: 700;
+    color: $color-text;
+    font-family: $font-family-base;
+}
+
+h1,h2,h3,h4,label,input,a,ul,li {
+    display: block;
+}
+
+@include pc{
+    .pc_none{
+        display: none;
+    }
+    .sp_none{
+        display: block;
+    }
+}
+
+
+@include sp{
+    .sp_none{
+        display: none;
+    }
+    .pc_none{
+        display: block;
+    }
+}
