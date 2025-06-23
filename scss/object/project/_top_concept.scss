@@ -1,0 +1,117 @@
+.top_concept {
+    padding: 7.5rem 0 0;
+}
+
+.concept__title {
+    text-align: center;
+    h2 {
+        color: $color-main;
+        @include text-style(3.5rem, calc(50/35));
+        margin-bottom: 2.2rem;
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+            margin-bottom: 0.5rem;
+        }
+    }
+    p {
+        font-weight:500;
+        @include text-style(1.8rem, calc(30/18));
+    }
+}
+
+.concept__3e {
+    margin: 6rem 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    
+    @include sp {
+        flex-direction: column;
+        gap: 4rem;
+        max-width: 300px;
+        margin: 4rem auto;
+    }
+}
+
+.concept__3e-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.concept__3e__item-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    margin: 0 auto;
+    z-index: 3;
+    
+    @include sp {
+        position: relative;
+        
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid $color-main;
+        }
+    }
+
+    span {
+        // content: "";
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        width: 2rem;
+        height: 2rem;
+        background: $color-main;
+        border-radius: 50%;
+        
+        @include sp {
+            display: none;
+        }
+    }
+}
+
+.concept__3e__item__text-en {
+    color: $color-main;
+    text-align: right;
+    @include text-style(2.4rem, 1.2);
+    margin-bottom: 0.5rem;
+    
+    @include sp {
+        @include text-style(2rem, 1.2);
+    }
+}
+
+.concept__3e__item__text-jp {
+    color: $color-text;
+    text-align: left;
+    @include text-style(1.6rem, 1.2);
+    
+    @include sp {
+        @include text-style(1.4rem, 1.2);
+    }
+}
+
+.concept__3e__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.1rem;
+    margin: 3.5rem auto 0;
+    z-index: 2;
+    img {
+        width: 100%;
+    }
+}
