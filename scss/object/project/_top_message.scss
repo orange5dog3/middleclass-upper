@@ -1,1 +1,25 @@
+.top__message {
+    padding: 6.8rem 0 6rem;
+    @include sp {
+        padding: 4.7rem 0 4.1rem;
+    }
+}
 
+.message__title {
+    text-align: center;
+    h2 {
+        @include text-style(3rem, calc(50/30));
+        margin-bottom: 3rem;
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+            margin-bottom: 1.5rem;
+        }
+    }
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.8rem, calc(30/18));
+        }
+    }
+}

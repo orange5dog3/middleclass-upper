@@ -712,6 +712,11 @@ header {
   border: 0.1rem solid #CB0000;
 }
 
+.c-bg-red {
+  background-color: #CB0000;
+  color: #ffffff;
+}
+
 .top__first-view {
   position: relative;
 }
@@ -766,12 +771,48 @@ header {
      object-fit: cover;
 }
 
+.top__message {
+  padding: 6.8rem 0 6rem;
+}
+@media screen and (max-width: 767px) {
+  .top__message {
+    padding: 4.7rem 0 4.1rem;
+  }
+}
+
+.message__title {
+  text-align: center;
+}
+.message__title h2 {
+  font-size: 3rem;
+  line-height: 1.6666666667;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .message__title h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+.message__title p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .message__title p {
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
+  }
+}
+
 .top__concept {
-  padding: 6.8rem 0 0;
+  padding: 6.8rem 0 5.5rem;
 }
 @media screen and (max-width: 767px) {
   .top__concept {
-    padding: 4.7rem 0 0;
+    padding: 4.7rem 0 3.5rem;
   }
 }
 
