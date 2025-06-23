@@ -4,8 +4,8 @@ html {
     //375px~767px
     font-size: 62.5%;
     //768~1160px
-    @media(min-width: 768px) and (max-width: 1160px){
-      font-size: calc(10 / 1160 * 100vw);
+    @media(min-width: 768px) and (max-width: 880px){
+      font-size: calc(10 / 880 * 100vw);
     }
     //1160px~
     @media (min-width: 1160px) {
@@ -24,6 +24,15 @@ body{
 
 h1,h2,h3,h4,label,input,a,ul,li {
     display: block;
+}
+
+.inner {
+    max-width: 94rem;
+    padding-inline: 3rem;
+    margin: 0 auto;
+    @include sp {
+        padding-inline: 2rem;
+    }
 }
 
 @include pc{
