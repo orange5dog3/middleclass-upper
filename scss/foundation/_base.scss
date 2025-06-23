@@ -3,12 +3,12 @@
 html {
     //375px~767px
     font-size: 62.5%;
-    //768~1160px
-    @media(min-width: 768px) and (max-width: 880px){
-      font-size: calc(10 / 880 * 100vw);
+    //768~939px
+    @media(min-width: 768px) and (max-width: 939px){
+      font-size: calc(10 / 940 * 100vw);
     }
-    //1160px~
-    @media (min-width: 1160px) {
+    //940px~
+    @media (min-width: 940px) {
       font-size: 10px;
     }
     @media(max-width:375px) {
