@@ -1,5 +1,8 @@
-.top_concept {
-    padding: 7.5rem 0 0;
+.top__concept {
+    padding: 6.8rem 0 0;
+    @include sp {
+        padding: 4.7rem 0 0;
+    }
 }
 
 .concept__title {
@@ -7,7 +10,7 @@
     h2 {
         color: $color-main;
         @include text-style(3.5rem, calc(50/35));
-        margin-bottom: 2.2rem;
+        margin-bottom: 1.5rem;
         @include sp {
             @include text-style(2.5rem, calc(40/25));
             margin-bottom: 0.5rem;
@@ -16,102 +19,84 @@
     p {
         font-weight:500;
         @include text-style(1.8rem, calc(30/18));
+        @include sp {
+            margin: 0;
+        }
+    }
+}
+
+.concept__image {
+    margin-top: 3.4rem;
+    @include sp {
+        margin-top: 2.2rem;
+    }
+    img {
+        width: 100%;
     }
 }
 
 .concept__3e {
-    margin: 6rem 0;
+    margin-top: 2rem;
     position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 6rem;
-    
     @include sp {
-        flex-direction: column;
-        gap: 4rem;
-        max-width: 300px;
-        margin: 4rem auto;
+        margin-top: 3.3rem;
     }
 }
 
-.concept__3e-item {
-    display: flex;
-    flex-direction: column;
+.concept__3e__arrow {
+    position: absolute;
+    top: -2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+        height: 19rem;
+    }
 }
 
-.concept__3e__item-text {
+.concept__3e__item {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    gap: 8rem;
-    margin: 0 auto;
-    z-index: 3;
-    
-    @include sp {
-        position: relative;
-        
-        &:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            bottom: -2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-top: 6px solid $color-main;
-        }
+    gap: 4rem;
+
+    &:not(:first-child) {
+        margin-top: 1.8rem;
     }
 
-    span {
-        // content: "";
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+    &::before {
+        content: '';
         width: 2rem;
         height: 2rem;
-        background: $color-main;
+        background-color: $color-main;
         border-radius: 50%;
-        
-        @include sp {
-            display: none;
-        }
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
     }
 }
 
-.concept__3e__item__text-en {
+.concept__3e__item-en {
     color: $color-main;
+    @include text-style(2.5rem, calc(50/25));
+    @include sp {
+        @include text-style(2rem, calc(50/20));
+    }
+    flex: 1;
     text-align: right;
-    @include text-style(2.4rem, 1.2);
-    margin-bottom: 0.5rem;
-    
-    @include sp {
-        @include text-style(2rem, 1.2);
-    }
+    padding-right: 2rem;
 }
 
-.concept__3e__item__text-jp {
+.concept__3e__item-jp {
+    @include text-style(2.3rem, calc(50/23));
+    @include sp {
+        @include text-style(2rem, calc(50/20));
+    }
+    font-weight: 500;
     color: $color-text;
+    flex: 1;
     text-align: left;
-    @include text-style(1.6rem, 1.2);
-    
-    @include sp {
-        @include text-style(1.4rem, 1.2);
-    }
-}
-
-.concept__3e__image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 3.1rem;
-    margin: 3.5rem auto 0;
-    z-index: 2;
-    img {
-        width: 100%;
-    }
+    padding-left: 2rem;
 }
