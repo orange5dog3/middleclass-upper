@@ -1,0 +1,56 @@
+.top__voice {
+    padding: 4.4rem 0 8rem;
+    @include sp {
+        padding: 4.5rem 0 5rem;
+    }
+}
+
+.voice__title {
+    h2 {
+        @include text-style(3rem, calc(50/30));
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+        }
+    }
+}
+
+.voice__box {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    margin-top: 3.6rem;
+    @include sp {
+        margin-top: 4rem;
+    }
+}
+
+.voice__box-item {
+    width: 27rem;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.voice__box-item-image {
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.voice__box-item-text {
+    h3 {
+        @include text-style(2.2rem, calc(33/22));
+        margin-top: 1.7rem;
+        @include sp {
+            margin-top: 2.7rem;
+        }
+    }
+
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+}

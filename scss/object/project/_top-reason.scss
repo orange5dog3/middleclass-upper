@@ -6,7 +6,6 @@
 }
 
 .reason__title {
-    text-align: center;
     h2 {
         @include text-style(3rem, calc(50/30));
         @include sp {
@@ -20,15 +19,26 @@
     flex-direction: column;
     margin-top: 2.8em;
     gap: 5rem;
+    @include sp {
+        margin-top: 3.4rem;
+        gap: 3.8rem;
+    }
 }
 
 .reason__box-item {
     display: flex;
     flex-direction: row;
+    @include sp {
+        flex-direction: column;
+    }
 }
 
 .reason__box__item-image {
     width: calc(350 / 1080 * 100vw);
+    @include sp {
+        width: 100%;
+    }
+
     img {
         width: 100%;
         object-fit: cover;
@@ -41,7 +51,8 @@
         padding-left: 5rem;
         @include text-style(2.2rem, calc(33/22));
         @include sp {
-            @include text-style(1.8rem, calc(28/18));
+            @include text-style(2rem, calc(30/20));
+            padding-left: 0;
         }
     }
 
@@ -51,6 +62,9 @@
         height: 2px;
         background-color: $color-main;
         margin-top: 1rem;
+        @include sp {
+            margin-top: 0.7rem;
+        }
     }
 
     p {
@@ -59,19 +73,31 @@
         padding-left: 5rem;
         @include text-style(1.8rem, calc(33/18));
         @include sp {
-            @include text-style(1.6rem, calc(28/16));
+            @include text-style(1.6rem, calc(30/16));
+            padding-left: 0;
+            margin-top: 1.7rem;
         }
     }
 }
 
 .reason__box__item__text-1 h3 {
     margin-top: 0.7rem;
+    @include sp {
+        margin-top: 3.2rem;
+    }
 }
 
 .reason__box__item__text-2 h3 {
     margin-top: -0.3rem;
+    @include sp {
+        margin-top: 3.2rem;
+    }
 }
 
 .reason__box__item__text-3 h3 {
     margin-top: -0.5rem;
+    @include sp {
+        margin-top: 3.2rem;
+    }
 }
+
