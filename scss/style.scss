@@ -21,12 +21,15 @@
 @import "object/component/component";
 
 // Project
-@import "object/project/top_main";
-@import "object/project/top_first-view";
-@import "object/project/top_message";
-@import "object/project/top_concept";
-@import "object/project/result_list";
-@import "object/project/result_details";
+@import "object/project/top-main";
+@import "object/project/top-first-view";
+@import "object/project/top-message";
+@import "object/project/top-concept";
+@import "object/project/top-reason";
+@import "object/project/top-voice";
+
+@import "object/project/result-list";
+@import "object/project/result-details";
 
 // Utility
 @import "object/utility/utility";

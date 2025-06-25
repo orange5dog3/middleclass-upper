@@ -19,3 +19,22 @@
     background-color: $color-main;
     color: $color-white;
 }
+
+.c-font-red {
+    color: $color-main;
+}
+
+.c-radius-red {
+    &::before {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        background-color: $color-main;
+        border-radius: 50%;
+        position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}

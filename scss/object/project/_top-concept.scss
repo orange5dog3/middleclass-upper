@@ -8,7 +8,6 @@
 .concept__title {
     text-align: center;
     h2 {
-        color: $color-main;
         @include text-style(3.5rem, calc(50/35));
         margin-bottom: 1.5rem;
         @include sp {
@@ -63,23 +62,9 @@
     &:not(:first-child) {
         margin-top: 1.8rem;
     }
-
-    &::before {
-        content: '';
-        width: 2rem;
-        height: 2rem;
-        background-color: $color-main;
-        border-radius: 50%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
 }
 
 .concept__3e__item-en {
-    color: $color-main;
     @include text-style(2.5rem, calc(50/25));
     @include sp {
         @include text-style(2rem, calc(50/20));
@@ -99,4 +84,12 @@
     flex: 1;
     text-align: left;
     padding-left: 2rem;
+}
+
+.concept-radius-red {
+    &::before {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
