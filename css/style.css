@@ -1161,4 +1161,138 @@ header {
   font-weight: 500;
   margin-top: 1rem;
   margin-right: 0;
+}
+
+.top__flow {
+  padding: 3.4rem 0 8rem;
+}
+@media screen and (max-width: 767px) {
+  .top__flow {
+    padding: 4.5rem 0 5rem;
+  }
+}
+
+.flow__title h2 {
+  font-size: 3rem;
+  line-height: 1.6666666667;
+}
+@media screen and (max-width: 767px) {
+  .flow__title h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+
+.flow__box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.flow__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5.8rem;
+  margin-top: 5.3rem;
+}
+@media screen and (max-width: 767px) {
+  .flow__box {
+    margin-top: 3.8rem;
+    gap: 3.6rem;
+  }
+}
+
+.flow__box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 76rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .flow__box-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 28.7rem;
+    gap: 0.9rem;
+  }
+}
+.flow__box-item h3 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+.flow__box-item p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .flow__box-item p {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
+
+.flow-radius-red::before {
+  position: absolute;
+  top: 0.6rem;
+  left: -7rem;
+}
+@media screen and (max-width: 767px) {
+  .flow-radius-red::before {
+    left: -4rem;
+  }
+}
+
+.flow__box__item-title {
+  width: 19.5rem;
+}
+@media screen and (max-width: 767px) {
+  .flow__box__item-title {
+    width: 100%;
+  }
+}
+
+.flow__box__item-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .flow__box__item-text {
+    width: 100%;
+  }
+}
+
+.flow__box-image {
+  position: absolute;
+  top: 7.7rem;
+  left: 6rem;
+  height: 41rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.flow__box-image img {
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .flow__box-image {
+    top: 5.7rem;
+    left: 1.8rem;
+    height: 66.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
