@@ -1341,7 +1341,7 @@ header {
 @media screen and (max-width: 767px) {
   .question__box__item-q,
   .question__box__item-a {
-    padding: 1.7rem 0.4rem 0.9rem 0;
+    padding: 1.7rem 1.5rem 0.9rem 0;
   }
 }
 .question__box__item-q p,
@@ -1355,6 +1355,12 @@ header {
   .question__box__item-a p {
     font-size: 1.6rem;
     line-height: 1.875;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .question__box-item:last-child .question__box__item-q {
+    padding: 1.2rem 1.5rem 0.7rem 0;
   }
 }
 
