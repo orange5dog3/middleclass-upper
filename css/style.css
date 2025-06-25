@@ -1295,4 +1295,113 @@ header {
     left: 1.8rem;
     height: 66.8rem;
   }
+}
+
+.top__question {
+  padding: 2.5rem 0;
+}
+@media screen and (max-width: 767px) {
+  .top__question {
+    padding: 0.5rem 0;
+  }
+}
+
+.question__title h2 {
+  font-size: 3rem;
+  line-height: 1.6666666667;
+}
+@media screen and (max-width: 767px) {
+  .question__title h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+}
+
+.question__box {
+  margin-top: 3.7rem;
+}
+
+.question__box-item {
+  border-top: 0.5px solid #000000;
+}
+.question__box-item:last-child {
+  border-bottom: 0.5px solid #000000;
+}
+
+.question__box__item-q,
+.question__box__item-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 3rem 1.5rem 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .question__box__item-q,
+  .question__box__item-a {
+    padding: 1.7rem 1.5rem 0.9rem 0;
+  }
+}
+.question__box__item-q p,
+.question__box__item-a p {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .question__box__item-q p,
+  .question__box__item-a p {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .question__box-item:last-child .question__box__item-q {
+    padding: 1.2rem 1.5rem 0.7rem 0;
+  }
+}
+
+.question__box__item-a {
+  background-color: rgba(203, 0, 0, 0.1);
+  display: none;
+}
+
+.question__box-item.is-open .question__box__item-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.question__box__item-text {
+  margin-left: 1.3rem;
+}
+@media screen and (max-width: 767px) {
+  .question__box__item-text {
+    max-width: 23.3rem;
+    padding-left: 0.6rem;
+  }
+}
+
+.question__q-icon,
+.question__a-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.question__arrow {
+  width: 1.3rem;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  margin-left: auto;
+}
+
+.question__box-item.is-open .question__arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

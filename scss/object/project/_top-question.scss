@@ -1,0 +1,86 @@
+.top__question {
+    padding: 2.5rem 0;
+    @include sp {
+        padding: 0.5rem 0;
+    }
+}
+
+.question__title {
+    h2 {
+        @include text-style(3rem, calc(50/30));
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+        }
+    }
+}
+
+.question__box {
+    margin-top: 3.7rem;
+}
+
+.question__box-item {
+    border-top: 0.5px solid $color-text;
+    &:last-child {
+        border-bottom: 0.5px solid $color-text;
+    }
+}
+
+.question__box__item-q,
+.question__box__item-a {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
+    @include sp {
+        padding: 1.7rem 1.5rem 0.9rem 0;
+    }
+
+    p {
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+
+}
+
+// 最後のqのみpaddingを調整
+.question__box-item:last-child .question__box__item-q {
+    @include sp {
+        padding: 1.2rem 1.5rem 0.7rem 0;
+    }
+}
+
+.question__box__item-a {
+    background-color:rgba(203, 0, 0, 0.1);
+    display: none;
+}
+
+.question__box-item.is-open .question__box__item-a {
+    display: flex; 
+}
+
+.question__box__item-text {
+    margin-left: 1.3rem;
+    @include sp {
+        max-width: 23.3rem;
+        padding-left: 0.6rem;
+    }
+}
+
+.question__q-icon,
+.question__a-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.question__arrow {
+    width: 1.3rem;
+    height: auto;
+    transition: transform .3s;
+    margin-left: auto;
+}
+
+.question__box-item.is-open .question__arrow {
+    transform: rotate(180deg);
+}
