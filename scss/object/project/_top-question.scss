@@ -21,15 +21,15 @@
     }
 }
 
-.question__box-item {
+.question__card {
     border-top: 0.5px solid $color-text;
     &:last-child {
         border-bottom: 0.5px solid $color-text;
     }
 }
 
-.question__box__item-q,
-.question__box__item-a {
+.question__card-q,
+.question__card-a {
     display: flex;
     align-items: center;
     padding: 1.5rem 3rem 1.5rem 1.6rem;
@@ -48,22 +48,22 @@
 }
 
 // 最後のqのみpaddingを調整
-.question__box-item:last-child .question__box__item-q {
+.question__card:last-child .question__card-q {
     @include sp {
         padding: 1.2rem 1.5rem 0.7rem 0;
     }
 }
 
-.question__box__item-a {
+.question__card-a {
     background-color:rgba(203, 0, 0, 0.1);
     display: none;
 }
 
-.question__box-item.is-open .question__box__item-a {
+.question__card.is-open .question__card-a {
     display: flex; 
 }
 
-.question__box__item-text {
+.question__card-text {
     margin-left: 1.3rem;
     @include sp {
         width: vw(233, 375);
@@ -84,6 +84,6 @@
     margin-left: auto;
 }
 
-.question__box-item.is-open .question__arrow {
+.question__card.is-open .question__arrow {
     transform: rotate(180deg);
 }

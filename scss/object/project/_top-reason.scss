@@ -25,7 +25,7 @@
     }
 }
 
-.reason__box-item {
+.reason__card {
     display: flex;
     flex-direction: row;
     @include sp {
@@ -33,7 +33,7 @@
     }
 }
 
-.reason__box__item-image {
+.reason__card-image {
     width: calc(350 / 1080 * 100vw);
     @include sp {
         width: 100%;
@@ -45,7 +45,7 @@
     }
 }
 
-.reason__box__item-text {
+.reason__card-text {
     flex: 1;
     h3 {
         padding-left: 5rem;
@@ -80,21 +80,21 @@
     }
 }
 
-.reason__box__item__text-1 h3 {
+.reason__card__text-1 h3 {
     margin-top: 0.7rem;
     @include sp {
         margin-top: 3.2rem;
     }
 }
 
-.reason__box__item__text-2 h3 {
+.reason__card__text-2 h3 {
     margin-top: -0.3rem;
     @include sp {
         margin-top: 3.2rem;
     }
 }
 
-.reason__box__item__text-3 h3 {
+.reason__card__text-3 h3 {
     margin-top: -0.5rem;
     @include sp {
         margin-top: 3.2rem;

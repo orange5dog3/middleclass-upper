@@ -1089,7 +1089,7 @@ footer {
   }
 }
 
-.reason__box-item {
+.reason__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,7 +1099,7 @@ footer {
           flex-direction: row;
 }
 @media screen and (max-width: 767px) {
-  .reason__box-item {
+  .reason__card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1107,38 +1107,38 @@ footer {
   }
 }
 
-.reason__box__item-image {
+.reason__card-image {
   width: 32.4074074074vw;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item-image {
+  .reason__card-image {
     width: 100%;
   }
 }
-.reason__box__item-image img {
+.reason__card-image img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.reason__box__item-text {
+.reason__card-text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.reason__box__item-text h3 {
+.reason__card-text h3 {
   padding-left: 5rem;
   font-size: 2.2rem;
   line-height: 1.5;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item-text h3 {
+  .reason__card-text h3 {
     font-size: 2rem;
     line-height: 1.5;
     padding-left: 0;
   }
 }
-.reason__box__item-text span {
+.reason__card-text span {
   display: block;
   width: 100%;
   height: 2px;
@@ -1146,11 +1146,11 @@ footer {
   margin-top: 1rem;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item-text span {
+  .reason__card-text span {
     margin-top: 0.7rem;
   }
 }
-.reason__box__item-text p {
+.reason__card-text p {
   font-weight: 500;
   margin-top: 3.7rem;
   padding-left: 5rem;
@@ -1158,7 +1158,7 @@ footer {
   line-height: 1.8333333333;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item-text p {
+  .reason__card-text p {
     font-size: 1.6rem;
     line-height: 1.875;
     padding-left: 0;
@@ -1166,29 +1166,29 @@ footer {
   }
 }
 
-.reason__box__item__text-1 h3 {
+.reason__card__text-1 h3 {
   margin-top: 0.7rem;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item__text-1 h3 {
+  .reason__card__text-1 h3 {
     margin-top: 3.2rem;
   }
 }
 
-.reason__box__item__text-2 h3 {
+.reason__card__text-2 h3 {
   margin-top: -0.3rem;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item__text-2 h3 {
+  .reason__card__text-2 h3 {
     margin-top: 3.2rem;
   }
 }
 
-.reason__box__item__text-3 h3 {
+.reason__card__text-3 h3 {
   margin-top: -0.5rem;
 }
 @media screen and (max-width: 767px) {
-  .reason__box__item__text-3 h3 {
+  .reason__card__text-3 h3 {
     margin-top: 3.2rem;
   }
 }
@@ -1230,32 +1230,32 @@ footer {
   }
 }
 
-.voice__box-item {
+.voice__card {
   width: 27rem;
 }
 @media screen and (max-width: 767px) {
-  .voice__box-item {
+  .voice__card {
     width: 100%;
   }
 }
 
-.voice__box-item-image img {
+.voice__card-image img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.voice__box-item-text h3 {
+.voice__card-text h3 {
   font-size: 2.2rem;
   line-height: 1.5;
   margin-top: 1.7rem;
 }
 @media screen and (max-width: 767px) {
-  .voice__box-item-text h3 {
+  .voice__card-text h3 {
     margin-top: 2.7rem;
   }
 }
-.voice__box-item-text p {
+.voice__card-text p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
@@ -1330,7 +1330,7 @@ footer {
   }
 }
 
-.flow__box-item {
+.flow__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1341,7 +1341,7 @@ footer {
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  .flow__box-item {
+  .flow__card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1350,17 +1350,17 @@ footer {
     gap: 0.9rem;
   }
 }
-.flow__box-item h3 {
+.flow__card h3 {
   font-size: 2.2rem;
   line-height: 1.5;
 }
-.flow__box-item p {
+.flow__card p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  .flow__box-item p {
+  .flow__card p {
     font-size: 1.6rem;
     line-height: 1.875;
   }
@@ -1377,22 +1377,22 @@ footer {
   }
 }
 
-.flow__box__item-title {
+.flow__card-title {
   width: 17.5925925926vw;
 }
 @media screen and (max-width: 767px) {
-  .flow__box__item-title {
+  .flow__card-title {
     width: 100%;
   }
 }
 
-.flow__box__item-text {
+.flow__card-text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 @media screen and (max-width: 767px) {
-  .flow__box__item-text {
+  .flow__card-text {
     width: 100%;
   }
 }
@@ -1426,15 +1426,15 @@ footer {
   }
 }
 
-.question__box-item {
+.question__card {
   border-top: 0.5px solid #000000;
 }
-.question__box-item:last-child {
+.question__card:last-child {
   border-bottom: 0.5px solid #000000;
 }
 
-.question__box__item-q,
-.question__box__item-a {
+.question__card-q,
+.question__card-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1444,47 +1444,47 @@ footer {
   padding: 1.5rem 3rem 1.5rem 1.6rem;
 }
 @media screen and (max-width: 767px) {
-  .question__box__item-q,
-  .question__box__item-a {
+  .question__card-q,
+  .question__card-a {
     padding: 1.7rem 1.5rem 0.9rem 0;
   }
 }
-.question__box__item-q p,
-.question__box__item-a p {
+.question__card-q p,
+.question__card-a p {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  .question__box__item-q p,
-  .question__box__item-a p {
+  .question__card-q p,
+  .question__card-a p {
     font-size: 1.6rem;
     line-height: 1.875;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .question__box-item:last-child .question__box__item-q {
+  .question__card:last-child .question__card-q {
     padding: 1.2rem 1.5rem 0.7rem 0;
   }
 }
 
-.question__box__item-a {
+.question__card-a {
   background-color: rgba(203, 0, 0, 0.1);
   display: none;
 }
 
-.question__box-item.is-open .question__box__item-a {
+.question__card.is-open .question__card-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.question__box__item-text {
+.question__card-text {
   margin-left: 1.3rem;
 }
 @media screen and (max-width: 767px) {
-  .question__box__item-text {
+  .question__card-text {
     width: 62.1333333333vw;
     padding-left: 0.6rem;
   }
@@ -1506,7 +1506,7 @@ footer {
   margin-left: auto;
 }
 
-.question__box-item.is-open .question__arrow {
+.question__card.is-open .question__arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -1549,43 +1549,43 @@ footer {
   }
 }
 
-.blog__box-item {
+.blog__card {
   width: 26rem;
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  .blog__box-item {
+  .blog__card {
     width: 100%;
   }
 }
 
-.blog__box__item-image {
+.blog__card-image {
   aspect-ratio: 26/20;
 }
 @media screen and (max-width: 767px) {
-  .blog__box__item-image {
+  .blog__card-image {
     aspect-ratio: 33.5/20;
   }
 }
-.blog__box__item-image img {
+.blog__card-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.blog__box__item-text h3 {
+.blog__card-text h3 {
   font-size: 2rem;
   line-height: 1.25;
   margin-top: 3rem;
 }
 @media screen and (max-width: 767px) {
-  .blog__box__item-text h3 {
+  .blog__card-text h3 {
     font-size: 2rem;
     line-height: 1.5;
   }
 }
-.blog__box__item-text time {
+.blog__card-text time {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   display: block;
@@ -1594,7 +1594,7 @@ footer {
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  .blog__box__item-text time {
+  .blog__card-text time {
     margin-top: 0.5rem;
   }
 }
