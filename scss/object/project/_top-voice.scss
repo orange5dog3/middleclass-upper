@@ -24,21 +24,21 @@
     }
 }
 
-.voice__box-item {
+.voice__card {
     width: 27rem;
     @include sp {
         width: 100%;
     }
 }
 
-.voice__box-item-image {
+.voice__card-image {
     img {
         width: 100%;
         object-fit: cover;
     }
 }
 
-.voice__box-item-text {
+.voice__card-text {
     h3 {
         @include text-style(2.2rem, calc(33/22));
         margin-top: 1.7rem;

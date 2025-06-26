@@ -48,7 +48,7 @@
     }
 }
 
-.flow__box-item {
+.flow__card {
     display: flex;
     align-items: start;
     width: 76rem;
@@ -83,14 +83,14 @@
     }
 }
 
-.flow__box__item-title {
+.flow__card-title {
     width: vw(190, 1080);
     @include sp {
         width: 100%;
     }
 }
 
-.flow__box__item-text {
+.flow__card-text {
     flex: 1;
     @include sp {
         width: 100%;

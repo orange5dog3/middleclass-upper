@@ -25,7 +25,7 @@
     }
 }
 
-.blog__box-item {
+.blog__card {
     width: 26rem;
     position: relative;
     @include sp {
@@ -33,7 +33,7 @@
     }
 }
 
-.blog__box__item-image {
+.blog__card-image {
     aspect-ratio: 26 / 20;
     @include sp {
         aspect-ratio: 33.5 / 20;
@@ -45,7 +45,7 @@
     }
 }
 
-.blog__box__item-text {
+.blog__card-text {
     h3 {
         @include text-style(2rem, calc(25/20));
         margin-top: 3rem;
