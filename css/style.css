@@ -702,6 +702,11 @@ header {
 footer {
   padding: 3rem 0 4rem;
 }
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 3.8rem 0 5.5rem;
+  }
+}
 
 .footer__nav {
   display: -webkit-box;
@@ -740,7 +745,8 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .footer__logo {
-    width: 6.4vw;
+    margin-top: 1.2rem;
+    width: 8.5333333333vw;
   }
 }
 .footer__logo img {
@@ -755,8 +761,9 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .footer__copyright {
-    font-size: 1.4rem;
-    line-height: 1.7857142857;
+    margin-top: 2.7rem;
+    font-size: 1.5rem;
+    line-height: 1.3333333333;
   }
 }
 
@@ -771,6 +778,11 @@ footer {
 @media screen and (max-width: 767px) {
   .footer__sns {
     gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__sns {
+    margin-top: 1.7rem;
   }
 }
 
@@ -1408,6 +1420,11 @@ footer {
 .question__box {
   margin-top: 3.5rem;
 }
+@media screen and (max-width: 767px) {
+  .question__box {
+    margin-top: 3.7rem;
+  }
+}
 
 .question__box-item {
   border-top: 0.5px solid #000000;
@@ -1497,10 +1514,21 @@ footer {
 .top__blog {
   padding: 11.5rem 0 11.7rem;
 }
+@media screen and (max-width: 767px) {
+  .top__blog {
+    padding: 4.5rem 0 10.4rem;
+  }
+}
 
 .blog__title h2 {
   font-size: 3rem;
   line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .blog__title h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
 }
 
 .blog__box {
@@ -1516,7 +1544,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 4rem;
+    gap: 4.2rem;
+    margin-top: 4rem;
   }
 }
 
@@ -1548,7 +1577,13 @@ footer {
 .blog__box__item-text h3 {
   font-size: 2rem;
   line-height: 1.25;
-  margin-top: 1.8rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .blog__box__item-text h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
 .blog__box__item-text time {
   font-size: 1.7rem;
@@ -1557,6 +1592,11 @@ footer {
   font-weight: 500;
   margin-top: 1.2rem;
   text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .blog__box__item-text time {
+    margin-top: 0.5rem;
+  }
 }
 
 .btn-blog {
@@ -1569,10 +1609,20 @@ footer {
   top: 0;
   left: 0;
 }
+@media screen and (max-width: 767px) {
+  .btn-blog {
+    width: 9rem;
+  }
+}
 
 .blog__linklist {
   margin-top: 3.7rem;
   text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .blog__linklist {
+    text-align: center;
+  }
 }
 .blog__linklist a {
   font-size: 1.8rem;
@@ -1588,6 +1638,11 @@ footer {
   margin-top: 2.8rem;
   text-align: right;
 }
+@media screen and (max-width: 767px) {
+  .top__contact {
+    text-align: center;
+  }
+}
 
 .btn-contact {
   font-size: 2rem;
@@ -1595,4 +1650,9 @@ footer {
   letter-spacing: 0.2em;
   padding: 1.6rem 7.6rem 1.2rem;
   display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .btn-contact {
+    padding: 1.3rem 9.6rem 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

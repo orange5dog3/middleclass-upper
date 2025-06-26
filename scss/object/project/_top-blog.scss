@@ -1,10 +1,16 @@
 .top__blog {
     padding: 11.5rem 0 11.7rem;
+    @include sp {
+        padding: 4.5rem 0 10.4rem;
+    }
 }
 
 .blog__title {
     h2 {
         @include text-style(3rem, 1);
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+        }
     }
 }
 
@@ -14,7 +20,8 @@
     gap: 5rem;
     @include sp {
         flex-direction: column;
-        gap: 4rem;
+        gap: 4.2rem;
+        margin-top: 4rem;
     }
 }
 
@@ -41,7 +48,10 @@
 .blog__box__item-text {
     h3 {
         @include text-style(2rem, calc(25/20));
-        margin-top: 1.8rem;
+        margin-top: 3rem;
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+        }
     }
     time {
         @include text-style(1.7rem, calc(30/17));
@@ -49,6 +59,9 @@
         font-weight: 500;
         margin-top: 1.2rem;
         text-align: right;
+        @include sp {
+            margin-top: 0.5rem;
+        }
     }
 }
 
@@ -60,11 +73,17 @@
     position: absolute;
     top: 0;
     left: 0;
+    @include sp {
+        width: 9rem;
+    }
 }
 
 .blog__linklist {
     margin-top: 3.7rem;
     text-align: right;
+    @include sp {
+        text-align: center;
+    }
 
     a {
         @include text-style(1.8rem, calc(30/18));

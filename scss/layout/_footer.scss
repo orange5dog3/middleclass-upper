@@ -1,5 +1,8 @@
 footer {
     padding: 3rem 0 4rem;
+    @include sp {
+        padding: 3.8rem 0 5.5rem;
+    }
 }
 
 .footer__nav {
@@ -26,7 +29,8 @@ footer {
     margin-top: 1.3rem;
     width: vw(32, 1080);
     @include sp {
-        width: vw(24, 375);
+        margin-top: 1.2rem;
+        width: vw(32, 375);
     }
 
     img {
@@ -39,7 +43,8 @@ footer {
     @include text-style(1.5rem, calc(33/15));
     font-weight: 500;
     @include sp {
-        @include text-style(1.4rem, calc(25/14));
+        margin-top: 2.7rem;
+        @include text-style(1.5rem, calc(20/15));
     }
 }
 
@@ -48,6 +53,9 @@ footer {
     justify-content: center;
     @include sp {
         gap: 2.5rem;
+    }
+    @include sp {
+        margin-top: 1.7rem;
     }
 }
 
