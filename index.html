@@ -17,7 +17,7 @@
     </head>
     <body>
 		<div id="container">
-			<header>
+			<header class="header">
                 <div class="header__title">
                     <h1>
                         <a href="#" class="header__title-link">
@@ -215,6 +215,12 @@
                             <h2>ご利用の流れ</h2>
                         </div>
                         <div class="flow__box-wrapper">
+                            <div class="flow__box-image">
+                                <picture>
+                                    <source srcset="image/top/logo_top_flow.svg" media="(min-width: 768px)">
+                                    <img src="image/top/logo_top_flow_sp.svg" alt="きたむらミュージックスクール">
+                                </picture>
+                            </div>
                             <div class="flow__box">
                                 <div class="flow__box-item flow__box__item c-radius-red flow-radius-red">
                                     <h3 class="flow__box__item-title c-font-red">お問い合わせ</h3>
@@ -237,14 +243,7 @@
                                         マンツーマン指導なので、いつからでもスタートが可能です。</p>
                                 </div>
                             </div>
-                            <div class="flow__box-image">
-                                <picture>
-                                    <source srcset="image/top/logo_top_flow.svg" media="(min-width: 768px)">
-                                    <img src="image/top/logo_top_flow_sp.svg" alt="きたむらミュージックスクール">
-                                </picture>
-                            </div>
                         </div>
-                        
                     </div>
                 </section>
                 <section class="top__question question">
@@ -352,9 +351,34 @@
                         </div>
                     </div>
                 </section>
-                <section class="top__contact"></section>
+                <section class="top__contact contact">
+                    <a href="contact" class="c-btn btn-contact">お問い合わせ</a>
+                </section>
             </main>
-		    <footer></footer>
+		    <footer class="footer c-bg-red c-text-center">
+                <div class="footer__nav">
+                    <ul>
+                        <li><a href="#">ホーム</a></li>
+                        <li><a href="price">料金</a></li>
+                        <li><a href="blog">ブログ</a></li>
+                        <li><a href="result">卒業実績</a></li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <img src="image/top/logo_top_footer.svg" alt="きたむらミュージックスクール">
+                </div>
+                <div class="footer__copyright">
+                    <p>Copyright © 0000 KITAMURA music school Inc. All Rights</p>
+                </div>
+                <div class="footer__sns">
+                    <ul>
+                        <li><a href="#"><img src="image/top/logo_footer-twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="image/top/logo_footer-facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="image/top/logo_footer-youtube.svg" alt="YouTube"></a></li>
+                        <li><a href="#"><img src="image/top/logo_footer-instagram.svg" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </footer>
 		</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="js/main.js"></script>

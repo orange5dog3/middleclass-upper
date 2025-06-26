@@ -15,7 +15,7 @@
 }
 
 .question__box {
-    margin-top: 3.7rem;
+    margin-top: 3.5rem;
 }
 
 .question__box-item {
@@ -63,7 +63,7 @@
 .question__box__item-text {
     margin-left: 1.3rem;
     @include sp {
-        max-width: 23.3rem;
+        width: vw(233, 375);
         padding-left: 0.6rem;
     }
 }

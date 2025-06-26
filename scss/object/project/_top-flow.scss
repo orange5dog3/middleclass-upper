@@ -1,5 +1,5 @@
 .top__flow {
-    padding: 3.4rem 0 8rem;
+    padding: 3.4rem 0 6.5rem;
     @include sp {
         padding: 4.5rem 0 5rem;
     }
@@ -16,8 +16,25 @@
 
 .flow__box-wrapper {
     display: flex;
-    justify-content: flex-end;
     position: relative;
+    padding-left: vw(45, 1080);
+    gap:4.3rem;
+    @include sp {
+        gap: 1.3rem;
+        padding-left: 0;
+    }
+}
+
+.flow__box-image {
+    margin-top: 7.5rem;
+    height: 41rem;
+    img {
+        height: 100%;
+    }
+    @include sp {
+        margin-top: 5.7rem;
+        height: 66.8rem;
+    }
 }
 
 .flow__box {
@@ -38,7 +55,7 @@
     position: relative;
     @include sp {
         flex-direction: column;
-        width: 28.7rem;
+        width: vw(287, 375);
         gap: 0.9rem;
     }
 
@@ -67,7 +84,7 @@
 }
 
 .flow__box__item-title {
-    width: 19.5rem;
+    width: vw(190, 1080);
     @include sp {
         width: 100%;
     }
@@ -80,18 +97,3 @@
     }
 }
 
-.flow__box-image {
-    position: absolute;
-    top: 7.7rem;
-    left: 6rem;
-    height: 41rem;
-    transform: translateX(-50%);
-    img {
-        height: 100%;
-    }
-    @include sp {
-        top: 5.7rem;
-        left: 1.8rem;
-        height: 66.8rem;
-    }
-}

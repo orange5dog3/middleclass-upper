@@ -1,0 +1,11 @@
+.top__contact {
+    margin-top: 2.8rem;
+    text-align: right;
+}
+
+.btn-contact {
+    @include text-style(2rem, calc(33/20));
+    letter-spacing: 0.2em;
+    padding: 1.6rem 7.6rem 1.2rem;
+    display: inline-block;
+}
