@@ -97,4 +97,9 @@
         font-weight: 500;
         color: $color-text;
     }
+
+    @include sp {
+        padding-left: 2rem;
+        height: 3.6rem;
+    }
 }
