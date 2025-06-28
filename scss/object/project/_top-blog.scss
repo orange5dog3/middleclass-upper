@@ -25,7 +25,8 @@
     }
 }
 
-.blog__card {
+
+.blog__box-item {
     width: 26rem;
     position: relative;
     @include sp {
@@ -68,12 +69,8 @@
 
 .btn-blog {
     @include text-style(1.5rem, calc(25/15));
-    text-align: center;
     width: 8rem;
     height: 3rem;
-    position: absolute;
-    top: 0;
-    left: 0;
     @include sp {
         width: 9rem;
     }
