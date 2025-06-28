@@ -1,0 +1,148 @@
+.blog-blog-list__main {
+    padding-top: 7.2rem;
+    padding-bottom: 12.2rem;
+    @include sp {
+        padding-top: 5.5rem;
+        padding-bottom: 11.5rem;
+    }
+}
+
+.blog-blog-list__main-title {
+    @include text-style(2.5rem, calc(25/25));
+} 
+
+// items
+.blog-blog-list__main-items {
+    margin-top: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    @include sp {
+        gap: 3.9rem;
+    }
+}
+
+// card
+.blog-blog__items-card {
+    display: flex;
+    gap: 5rem;
+    @include sp {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.blog-blog__card-image {
+    width: 26rem;
+    aspect-ratio: 26 / 18.4;
+    @include sp {
+        width: 100%;
+        aspect-ratio: 33.5 / 20;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// text
+.blog-blog__card-text {
+    flex: 1;
+    @include sp {
+        width: 100%;
+    }
+    h3 {
+        @include text-style(2rem, calc(25/20));
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+            margin-top: 3.1rem;
+        }
+    }
+    time {
+        display: block;
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        margin-top: 1rem;
+        @include sp {
+            text-align: right;
+            margin-top: 0.4rem;
+        }
+    }
+    p {
+        @include text-style(1.6rem, calc(30/16));
+        font-weight: 500;
+        margin-top: 1.4rem;
+        @include sp {
+            margin-top: 0.9rem;
+        }
+    }
+}
+
+// btn
+.blog-blog__card-btn {
+    @include text-style(1.5rem, calc(25/15));
+    width: 8rem;
+    height: 3rem;
+    padding-top: 0.2rem;
+    @include sp {
+        width: 9rem;
+    }
+}
+
+
+// pagination
+.blog-blog__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    @include text-style(1.8rem, calc(30/18));
+    @include sp {
+        margin-top: 5.8rem;
+    }
+  
+    &-list {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      align-items: center;
+      @include sp {
+        gap: 0.5rem;
+      }
+    }
+  
+    &-item {
+      a {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        border: 1px solid $color-text;
+        text-decoration: none;
+        transition: 0.3s;
+        @include sp {
+            width: 4.4rem;
+            height: 4.4rem;
+            line-height: 4.4rem;
+        }
+  
+        &:hover {
+          background-color: $color-text;
+          color: $color-white;
+        }
+      }
+  
+      &.is-current a {
+        background-color: $color-text;
+        color: $color-white;
+        border-color: $color-text;
+      }
+    }
+  
+    &-dots {
+      padding-inline: 1rem;
+      @include sp {
+        padding-inline: 0.6rem;
+      }
+    }
+  }

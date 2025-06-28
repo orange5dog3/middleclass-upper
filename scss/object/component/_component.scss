@@ -103,3 +103,13 @@
         height: 3.6rem;
     }
 }
+
+.c-blog__card {
+    position: relative;
+    &-btn {
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
