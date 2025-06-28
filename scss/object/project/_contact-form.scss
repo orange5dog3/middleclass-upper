@@ -1,0 +1,226 @@
+.contact-form-text {
+    margin-top: 6.8rem;
+    text-align: center;
+    @include sp {
+        margin-top: 4.5rem;
+        text-align: left;
+    }
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+}
+
+//構造の決定
+
+.contact-form-items {
+    margin-top: 6.4rem;
+    @include sp {
+        margin-top: 3.3rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include sp {
+            gap: 1.2rem;
+        }
+    }
+    
+}
+
+.form__items-flex {
+    display: flex;
+    align-items: center;
+    @include sp {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: flex-start;
+    }
+}
+
+.form__items-left {
+    width: 17rem;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.form__items-right {
+    flex: 1;
+    @include sp {
+        width: 100%;
+    }
+}
+
+// 文字大きさ決定
+.form__items-company,
+.form__items-name,
+.form__items-email,
+.form__items-tel,
+.form__items-content {
+    label {
+        @include text-style(2rem, calc(33/20));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+    input,
+    textarea {
+        @include text-style(1.5rem, calc(33/15));
+        font-weight: 500;
+    }
+}
+
+.form__items-question {
+    label {
+        @include text-style(2rem, calc(30/20));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(33/16));
+        }
+    }
+
+
+}   
+
+// 枠組み
+.form__items-company,
+.form__items-name,
+.form__items-email,
+.form__items-tel,
+.form__items-content {
+    .form__items-right {
+        border: 0.05rem solid $color-text;
+        padding-top: 0.6rem;
+        padding-left: 2rem;
+        cursor: pointer;
+    
+        input {
+            width: 100%;
+        }
+    
+        
+    }
+}
+
+// 左微調整
+.form__items-left {
+    padding-top: 0.3rem;
+}
+
+
+// 質問の枠組み
+.form__items-question {
+    align-items: flex-start;
+    margin-top: -0.6rem;
+    @include sp {
+        margin-top: 1rem;
+    }
+    .form__items-right {
+        span {
+            @include text-style(1.8rem, calc(30/18));
+            text-align: left;
+            font-weight: 500;
+            @include sp {
+                @include text-style(1.6rem, calc(30/16));
+            }
+        }
+    }
+
+    label {
+        @include sp {
+            line-height: 1;
+        }
+    }
+}
+
+    // checkbox
+.form__items-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    span {
+        position: relative;
+        padding-left: 4rem;
+        @include sp {
+            padding-left: 3rem;
+        }
+    }
+
+    span::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        border: 0.05rem solid $color-text;
+    }
+
+    input[type="checkbox"]:checked + span::after {
+        content: '\f00c';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+// 内容の枠組み
+.form__items-content {
+    align-items: flex-start;
+    @include sp {
+        margin-top: -0.5rem;
+    }
+
+    .form__items-right {
+        margin-top: -0.3rem;
+        padding-top: 1rem;
+        @include sp {
+            margin-top: 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 29rem;
+            resize: vertical;
+            @include sp {
+                height: 17.7rem;
+            }
+        }
+    }
+}
+
+
+// 送信ボタン
+.btn-contact-form {
+    margin: 2rem auto 10rem;
+    width: 25rem;
+    height: 5rem;
+    @include text-style(2.5rem, calc(33/25));
+    @include sp {
+        margin: 3.8rem auto 11rem;
+        width: 33.5rem;
+        height: 5rem;
+        @include text-style(2rem, calc(36/20));
+    }
+}

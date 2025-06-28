@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>きたむらミュージックスクール</title>
+        
+        <meta property="og:title" content="きたむらミュージック | 永遠も。瞬間も。あなたと共に。">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://orange-david.com/middle-class-upper/">
+        <link rel="canonical" href="https://orange-david.com/middle-class-upper/">
+        <!-- <meta property="og:image" content="　　　"> -->
+        <meta property="og:site_name" content="きたむらミュージックスクール">
+        <!-- <meta property="og:description" content="　　　"> -->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+		<div id="container">
+			<header class="header">
+                <div class="header__title">
+                    <h1>
+                        <a href="#" class="header__title-link">
+                            <div class="header__title-text">
+                              きたむら<br class="sp_none"><span>ミュージックスクール</span>
+                            </div>
+                        </a>
+                    </h1>
+                </div>
+                <div class="header__nav sp_none">
+                    <nav>
+                        <ul>
+                            <li><a href="price" class="header__nav-link">料金</a></li>
+                            <li><a href="blog" class="header__nav-link">ブログ</a></li>
+                            <li><a href="result" class="header__nav-link">卒業実績</a></li>
+                            <li><a href="contact" class="c-btn btn-header">お問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>    
+                <!-- hamburger menu -->
+                <button id="hamburger-block" class="hamburger hamburger-trigger pc_none">
+                    <span class="hamburger-line"></span>
+                </button>
+                  
+                <div class="hamburger-menu pc_none">
+                    <nav>
+                        <ul>
+                            <li><a href="price">料金</a></li>
+                            <li><a href="blog">ブログ</a></li>
+                            <li><a href="result">卒業実績</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="hamburger-bg" class="hamburger-bg hamburger-trigger pc_none"></div>
+
+            </header>
+		    <main class="contact-form">
+                <section class="contact-form__view c-view">
+                    <div class="contact-form__view-image c-view-image">
+                        <picture>
+                            <source srcset="image/contact/image_contact_about.png" media="(min-width: 768px)">
+                            <img src="image/contact/image_contact_about_sp.png" alt="プラン">
+                        </picture>
+                    </div>
+                    <div class="contact-form__view-text c-view-text">
+                        <h2>お問い合わせ</h2>
+                    </div>
+                </section>
+                <section class="contact-form__band c-band">
+                    <h2 class="c-band-text">ホーム&emsp;>&emsp;&nbsp;お問い合わせ</h2>
+                </section>
+
+                <div class="inner">
+
+                    <div class="contact-form-text">
+                        <p>
+                            当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
+                            通常３営業日以内にメールにてご連絡させていただきます。
+                        </p>
+                    </div>
+
+                    <section class="contact-form-items form__items">
+                        <form>
+                            <!-- 会社名 -->
+                            <div class="form__items-company form__items-flex">
+                                <div class="form__items-left">
+                                    <label for="company">会社名</label>
+                                </div>
+                                <div class="form__items-right">
+                                    <input type="text" id="company" name="company" placeholder="きたむらミュージックスクール">
+                                </div>
+                            </div>
+
+                            <!-- お名前 -->
+                            <div class="form__items-name form__items-flex">
+                                <div class="form__items-left">
+                                    <label for="name">お名前</label>
+                                </div>
+                                <div class="form__items-right">
+                                    <input type="text" id="name" name="name" placeholder="北村　翔平">
+                                </div>
+                            </div>
+
+                            <!-- メールアドレス -->
+                            <div class="form__items-email form__items-flex">
+                                <div class="form__items-left">
+                                    <label for="email">メールアドレス</label>
+                                </div>
+                                <div class="form__items-right">
+                                    <input type="email" id="email" name="email" placeholder="info@kitamura.musicschool.jp">
+                                </div>
+                            </div>
+
+                            <!-- 電話番号 -->
+                            <div class="form__items-tel form__items-flex">
+                                <div class="form__items-left">
+                                    <label for="tel">電話番号</label>
+                                </div>
+                                <div class="form__items-right">
+                                    <input type="tel" id="tel" name="tel" placeholder="090-1234-5678">
+                                </div>
+                            </div>
+                            
+                            <!-- 質問 -->
+                            <div class="form__items-question form__items-flex">
+                                <div class="form__items-left">
+                                    <label>
+                                        目&emsp;的&emsp;<br class="sp_none">
+                                        (複数選択可)
+                                    </label>
+                                </div>
+                                <div class="form__items-right">
+                                    <div class="form__items-checkbox">
+                                        <label>
+                                            <input type="checkbox" name="question" value="プランについてのお問い合わせ">
+                                            <span>プランについてのお問い合わせ</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="question" value="ヒアリングのご予約">
+                                            <span>ヒアリングのご予約</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="question" value="資料請求">
+                                            <span>資料請求</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="question" value="その他">
+                                            <span>その他</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 内容 -->
+                            <div class="form__items-content form__items-flex">
+                                <div class="form__items-left">
+                                    <label for="contact-content">内&emsp;容</label>
+                                </div>
+                                <div class="form__items-right">
+                                    <textarea name="contact-content" id="contact-content" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- 送信ボタン -->
+                            <button type="submit" class="c-btn btn-contact-form c-text-center">送信</button>
+                        </form> 
+
+                    </section>
+                    
+                </div>
+         
+            </main>
+		    <footer class="footer c-bg-red c-text-center">
+                <div class="footer__nav">
+                    <ul>
+                        <li><a href="#">ホーム</a></li>
+                        <li><a href="price">料金</a></li>
+                        <li><a href="blog">ブログ</a></li>
+                        <li><a href="result">卒業実績</a></li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <img src="image/top/logo_top_footer.svg" alt="きたむらミュージックスクール">
+                </div>
+                <div class="footer__copyright">
+                    <p>Copyright © 0000 KITAMURA music school Inc. All Rights</p>
+                </div>
+                <div class="footer__sns">
+                    <ul>
+                        <li><a href="#"><img src="image/top/logo_footer-twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="image/top/logo_footer-facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="image/top/logo_footer-youtube.svg" alt="YouTube"></a></li>
+                        <li><a href="#"><img src="image/top/logo_footer-instagram.svg" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </footer>
+		</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
