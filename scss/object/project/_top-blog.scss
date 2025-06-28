@@ -48,9 +48,10 @@
 .blog__card-text {
     h3 {
         @include text-style(2rem, calc(25/20));
-        margin-top: 3rem;
+        margin-top: 2rem;
         @include sp {
             @include text-style(2rem, calc(30/20));
+            margin-top: 3rem;
         }
     }
     time {

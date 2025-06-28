@@ -20,6 +20,11 @@
     color: $color-white;
 }
 
+.c-bg-black {
+    background-color: $color-black;
+    color: $color-white;
+}
+
 .c-font-red {
     color: $color-main;
 }
@@ -38,4 +43,58 @@
 
 .c-text-center {
     text-align: center;
+}
+
+// ビュー
+.c-view {
+    position: relative;
+
+    &-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: rgba(80, 80, 80, 0.5);
+
+        &::before {  
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(80, 80, 80, 0.5);  // 半透明グレー
+            z-index: 1;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-text {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        h2 {
+            @include text-style(2.5rem, calc(60/25));
+            color: $color-white;
+        }
+    }
+}
+
+.c-band {
+    width: 100%;
+    height: 5rem;
+    background-color: $color-band;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+    &-text {
+        @include text-style(1.6rem, calc(33/16));
+        font-weight: 500;
+        color: $color-text;
+    }
 }

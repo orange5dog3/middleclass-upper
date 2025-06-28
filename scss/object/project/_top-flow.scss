@@ -17,7 +17,7 @@
 .flow__box-wrapper {
     display: flex;
     position: relative;
-    padding-left: vw(45, 1080);
+    padding-left: 4.5rem;
     gap:4.3rem;
     @include sp {
         gap: 1.3rem;
@@ -84,7 +84,7 @@
 }
 
 .flow__card-title {
-    width: vw(190, 1080);
+    width: 19rem;
     @include sp {
         width: 100%;
     }
