@@ -1,0 +1,168 @@
+.result-list__main {
+    padding-top: 7.5rem;
+    padding-bottom: 12rem;    
+}
+
+.result-list__view-image {
+    height: 20rem;
+}
+
+.result-list__main-title {
+    h2 {
+        @include text-style(2.5rem, 1);
+    }
+}
+
+// テンプレート--------------------------------
+// items
+.result-list__main-items {
+    margin-top: 4.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10.6rem; // 横方向
+    // row-gap: 6rem;    // 縦方向
+    @include sp {
+        gap: 3.9rem;
+    }
+}
+
+// 2段目の上に 61rem
+.result-list__items-card:nth-child(3),
+.result-list__items-card:nth-child(4) {
+  margin-top: 6rem;
+}
+
+// 3段目の上に 71rem
+.result-list__items-card:nth-child(5),
+.result-list__items-card:nth-child(6) {
+  margin-top: 7rem;
+}
+
+// 4段目の上に 71rem
+.result-list__items-card:nth-child(7),
+.result-list__items-card:nth-child(8) {
+  margin-top: 7rem;
+}
+
+// 5段目の上に 71rem
+.result-list__items-card:nth-child(9),
+.result-list__items-card:nth-child(10) {
+  margin-top: 7rem;
+}
+
+// card
+
+// .result-list__items-card {
+//     display: flex;
+//     gap: 5rem;
+//     @include sp {
+//         flex-direction: column;
+//         gap: 0;
+//     }
+// }
+
+.result-list__card-image {
+    width: 100%;
+    aspect-ratio: 387 / 273;
+    @include sp {
+        width: 100%;
+        aspect-ratio: 33.5 / 20;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// text
+.result-list__card-text {
+    h3 {
+        @include text-style(2rem, calc(25/20));
+        margin-top: 2rem;
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+            margin-top: 3.1rem;
+        }
+    }
+    time {
+        display: block;
+        @include text-style(1.8rem, calc(32/18));
+        font-weight: 500;
+        margin-top: 1rem;
+        text-align: right;
+
+        @include sp {
+            margin-top: 0.4rem;
+        }
+    }
+}
+
+// btn
+.result-list__card-btn {
+    @include text-style(1.5rem, calc(25/15));
+    width: 10rem;
+    height: 3rem;
+    padding-top: 0.2rem;
+    @include sp {
+        width: 9rem;
+    }
+}
+
+
+// pagination
+.result-list__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.5rem;
+    @include text-style(1.8rem, calc(30/18));
+    @include sp {
+        margin-top: 5.8rem;
+    }
+  
+    &-list {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      align-items: center;
+      @include sp {
+        gap: 0.5rem;
+      }
+    }
+  
+    &-item {
+      a {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        border: 1px solid $color-text;
+        text-decoration: none;
+        transition: 0.3s;
+        @include sp {
+            width: 4.4rem;
+            height: 4.4rem;
+            line-height: 4.4rem;
+        }
+  
+        &:hover {
+          background-color: $color-text;
+          color: $color-white;
+        }
+      }
+  
+      &.is-current a {
+        background-color: $color-text;
+        color: $color-white;
+        border-color: $color-text;
+      }
+    }
+  
+    &-dots {
+      padding-inline: 1rem;
+      @include sp {
+        padding-inline: 0.6rem;
+      }
+    }
+  }
