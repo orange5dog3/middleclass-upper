@@ -3342,4 +3342,224 @@ footer {
   padding-top: 1.2rem;
   padding-bottom: 0.67rem;
   border-bottom: 0.5px solid #000000;
+}
+
+.search__main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6.6rem;
+}
+@media screen and (max-width: 767px) {
+  .search__main-text {
+    margin-top: 3.6rem;
+  }
+}
+.search__main-text p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+}
+.search__main-text p span {
+  color: #000000;
+  font-weight: 700;
+}
+
+.search__main-items {
+  margin-top: 4.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7rem;
+}
+@media screen and (max-width: 767px) {
+  .search__main-items {
+    gap: 4rem;
+  }
+}
+
+.search__items-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .search__items-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+}
+
+.search__card-image {
+  width: 26rem;
+  height: 18.4rem;
+}
+@media screen and (max-width: 767px) {
+  .search__card-image {
+    width: 33.5rem;
+    height: 20rem;
+  }
+}
+.search__card-image picture {
+  display: block;
+}
+.search__card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.search__card-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .search__card-text {
+    width: 100%;
+  }
+}
+.search__card-text h3 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-top: -0.1rem;
+}
+@media screen and (max-width: 767px) {
+  .search__card-text h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 3rem;
+  }
+}
+.search__card-text time {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .search__card-text time {
+    text-align: right;
+    margin-top: 0.4rem;
+  }
+}
+.search__card-text p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .search__card-text p {
+    margin-top: 0.9rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
+.search__card-text span {
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .search__card-text span {
+    display: none;
+  }
+}
+
+.search__negative-margin {
+  margin-bottom: -0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .search__negative-margin {
+    margin-bottom: 0;
+  }
+}
+
+.search__card-btn {
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  width: 8rem;
+  height: 3rem;
+  padding-top: 0.2rem;
+}
+@media screen and (max-width: 767px) {
+  .search__card-btn {
+    width: 9rem;
+  }
+}
+
+.search__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 14.8rem;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+@media screen and (max-width: 767px) {
+  .search__pagination {
+    margin-top: 6rem;
+    margin-bottom: 14.5rem;
+  }
+}
+.search__pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .search__pagination-list {
+    gap: 0.5rem;
+  }
+}
+.search__pagination-item a {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border: 1px solid #000000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .search__pagination-item a {
+    width: 4.4rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+  }
+}
+.search__pagination-item a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.search__pagination-item.is-current a {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }/*# sourceMappingURL=style.css.map */
