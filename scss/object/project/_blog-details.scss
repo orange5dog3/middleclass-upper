@@ -5,14 +5,26 @@
     gap: 3rem;
     padding-top: 7rem;
     padding-bottom: 9.5rem;
+    @include sp {
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom:10.8rem;
+        gap: 3rem;
+    }
 }
 
 .blog-details-main {
     width: 60rem;
+    @include sp {
+        width: 100%;
+    }
 }
 
 .blog-details-side {
     flex: 1;
+    @include sp {
+        width: 100%;
+    }
 }
 
 // ----------------------------------------------------------------
@@ -22,6 +34,9 @@
 // カード --------------------------------
 .blog-details-main__card-image {
     aspect-ratio: 60 / 35;
+    @include sp {
+        aspect-ratio: 33.5 / 20;
+    }
     img {
         width: 100%;
         height: 100%;
@@ -34,12 +49,23 @@
         @include text-style(2.5rem, calc(40/25));
         margin-top: 5.4rem;
         line-height: 1;
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+            margin-top: 3rem;
+        }
     }
     time {
         display: block;
         @include text-style(1.7rem, calc(30/17));
         font-weight: 500;
         margin-top: 1.3rem;
+        @include sp {
+            margin-top: 0.6rem;
+        }   
+    }
+
+    span {
+        display: inline-block;
     }
 }
 
@@ -61,8 +87,10 @@
     align-items: center;
     gap: 0.4rem;
     margin-top: 2rem;
+    @include sp {
+        gap: 0.2rem;
+    }
 }
-
 
 
 .blog__sns-icon {
@@ -121,22 +149,60 @@
     }
 }
 
+
+.blog__sns-box-facebook,
+.blog__sns-box-twitter,
+.blog__sns-box-hatena,
+.blog__sns-box-line,
+.blog__sns-box-pocket {
+    @include sp {
+        padding: 0;
+        width: 6.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
 // text --------------------------------
 .blog-details-main__text-p1 {
     @include text-style(1.8rem, calc(30/18));
     font-weight: 500;
     margin-top: 4.8rem;
+    @include sp {
+    @include text-style(1.6rem, calc(30/16));
+        margin-top: 2.7rem;
+    }
+
+    span {
+        display: inline-block;
+    }
 }
 
 .blog-details-main__text-h2 {
     @include text-style(2rem, calc(40/20));
     margin-top: 3.3rem;
+    @include sp {
+        @include text-style(2rem, calc(30/20));
+        margin-top: 4rem;
+    }
 }
 
 .blog-details-main__text-p2 {
     @include text-style(1.8rem, calc(30/18));
     font-weight: 500;
     margin-top: 1.5rem;
+    @include sp {
+        @include text-style(1.6rem, calc(30/16));
+        margin-top: 1.7rem;
+    }
+
+    span {
+        display: inline;
+    }
 }
 
 // image --------------------------------
@@ -149,6 +215,9 @@
         height: 100%;
         object-fit: cover;
     }
+    @include sp {
+        margin-top: 4rem;
+    }
 }
 
 // list --------------------------------
@@ -156,12 +225,19 @@
     margin-top: 2.8rem;
     @include text-style(1.8rem, calc(30/18));
     font-weight: 500;
+    @include sp {
+        @include text-style(1.6rem, calc(30/16));
+        margin-top: 2.7rem;
+    }
 }
 
 // border --------------------------------
 .blog-details-main__border {
     margin-top: 4rem;
     border-top: 0.5px solid $color-text;
+    @include sp {
+        margin-top: 3.8rem;
+    }
 }
 
 // text--------------------------------
@@ -169,9 +245,15 @@
     margin-top: 4.3rem;
     position: relative;
     padding-left: 1rem;
+    @include sp {
+        margin-top: 5rem;
+    }
 
     h3 {
         @include text-style(2rem, calc(40/20));
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+        }
 
         &::before {
             content: "";
@@ -183,6 +265,10 @@
             width: 0.3rem;
             height: 2rem;
             background-color: $color-text;
+
+            @include sp {
+                height: 5rem;
+            }
         }
     }
 }
@@ -196,6 +282,10 @@
         @include text-style(1.8rem, calc(30/18));
         font-weight: 500;
         padding: 1.8rem 3rem 1rem 6.7rem;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+            padding: 1.7rem 2rem 1rem 7rem;
+        }
     }
 }
 
@@ -204,6 +294,12 @@
     position: absolute;
     top: 2rem;
     left: 3rem;
+
+    @include sp {
+        top: 2.1rem;
+        left: 2.5rem;
+    }
+
     img {
         width: 100%;
     }
@@ -212,6 +308,10 @@
 // textlink--------------------------------
 .blog-details-main__text-link {
     margin-top: 3.4rem;
+    @include sp {
+        margin-top: 3.7rem;
+    }
+
     a {
         @include text-style(2rem, calc(33/20));
         line-height: 1;
@@ -236,6 +336,10 @@
     display: flex;
     margin-top: 5.7rem;
     gap: 8rem;
+    @include sp {
+        margin-top: 5rem;
+        gap: 2.2rem;
+    }
 }
 
 // 共通項目
@@ -306,12 +410,19 @@
 // article--------------------------------
 .blog-details-main__article {
     margin-top: 9.5rem;
+    @include sp {
+        margin-top: 6.1rem;
+    }
 }
 
 .blog__main__article-title {
     h2 {
         @include text-style(1.8rem, calc(33/18));
         padding: 0.9rem 0 0.8rem 3rem;
+        @include sp {
+            text-align: center;
+            padding:1rem 0;
+        }
     }
 }
 
@@ -320,17 +431,29 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    @include sp {
+        margin-top: 1.9rem;
+        gap: 2rem;
+    }
 }
 
 // card
 .blog__main__article-items-card {
     display: flex;
     gap: 3rem;
+    @include sp {
+        gap: 2rem;
+    }
 }
 
 .blog-article__card-image {
     width: 20rem;
     aspect-ratio: 20 / 14;
+    @include sp {
+        width: 16rem;
+        aspect-ratio: 16 / 11;
+    }
     img {
         width: 100%;
         object-fit: cover;
@@ -341,6 +464,10 @@
     flex: 1;
     h3 {
         @include text-style(2rem, calc(25/20));
+        @include sp {
+            @include text-style(1.7rem, calc(28/17));
+            margin-top: 0.8rem;
+        }
     }
 
     time {
@@ -349,6 +476,17 @@
         font-weight: 500;
         margin-top: 1.3rem;
         padding-left: 0.5rem;
+        @include sp {
+            margin-top: 0.3rem;
+            padding-left: 0;
+        }
+    }
+
+    span {
+        display: inline-block;
+        @include sp {
+            display: none;
+        }
     }
 }
 
@@ -359,9 +497,7 @@
     text-align: center;
     @include text-style(1.5rem, calc(25/15));
     padding-top: 0.2rem;
-    @include sp {
-        width: 9rem;
-    }
+
 }
 
 
@@ -379,11 +515,20 @@
     justify-content: center;
     position: relative;
 
+    @include sp {
+        height: 26.8rem;
+    }
+
     span {
         display: block;
         width: 22rem;
         height: 17rem;
         background-color: $color-band;
+
+        @include sp {
+            width: 29.5rem;
+            height: 22.8rem;
+        }
     }
 
     p {
@@ -408,12 +553,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include sp {
+        height:9.3rem;
+    }
 }
 
 .blog-details-side__search__box-input {
     width: 18rem;
     height: 4rem;
     background-color: $color-band;
+
+    @include sp {
+        width: 24.1rem;
+        height: 5.4rem;
+    }
 }
 
 .blog-details-side__search__box-image {
@@ -423,11 +577,23 @@
     align-items: center;
     justify-content: center;
     background-color: $color-text;
+
+    @include sp {
+        width: 5.4rem;
+        height: 5.4rem;
+    }
+
+    img{
+        @include sp {
+            width: 2.6rem;
+        }
+    }
 }
 
 // おすすめの記事
 .blog-details-side__recommend {
     margin-top: 3rem;
+    
 }
 
 .blog-details-side__recommend-box {
@@ -435,24 +601,41 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    @include sp {
+        margin-top: 2.2rem;
+        gap: 2rem;
+    }
 }
 
 .blog-details-side__recommend__box-item {
     display: flex;
     gap: 1.5rem;
+    @include sp {
+        gap: 2rem;
+    }
 }
 
 .blog-details-side__recommend__box__item-image {
     width: 9.5rem;
     height: 7.5rem;
     background-color: $color-band;
+    @include sp {
+        width: 16rem;
+        height: 11rem;
+    }
 }
 
 .blog-details-side__recommend__box__item-text {
     flex: 1;
+    @include sp {
+        width: 100%;
+    }
     p {
         @include text-style(1.7rem, calc(28/17));
         font-weight: 500;
+        @include sp {
+            margin-top: 0.8rem;
+        }
     }
 }
 
