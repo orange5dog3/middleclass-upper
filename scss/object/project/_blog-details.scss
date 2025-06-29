@@ -1,0 +1,479 @@
+// 枠組み
+
+.blog-details-content {
+    display: flex;
+    gap: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 9.5rem;
+}
+
+.blog-details-main {
+    width: 60rem;
+}
+
+.blog-details-side {
+    flex: 1;
+}
+
+// ----------------------------------------------------------------
+// main
+// ----------------------------------------------------------------
+
+// カード --------------------------------
+.blog-details-main__card-image {
+    aspect-ratio: 60 / 35;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.blog-details-main__card-text{
+    h2 {
+        @include text-style(2.5rem, calc(40/25));
+        margin-top: 5.4rem;
+        line-height: 1;
+    }
+    time {
+        display: block;
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        margin-top: 1.3rem;
+    }
+}
+
+.blog-details-main__card-btn {
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    @include text-style(1.5rem, calc(25/15));
+    padding-top: 0.2rem;
+    @include sp {
+        width: 9rem;
+    }
+}
+
+// sns
+.blog-details-main__sns {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 2rem;
+}
+
+
+
+.blog__sns-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__sns__icon-text {
+    @include text-style(1rem, calc(33/10));
+    color: $color-white;
+}
+
+.blog__sns-box-facebook {
+    background-color: $color-facebook;
+    padding: 0.4rem 1.6rem;
+
+    p {
+        padding-left: 1.4rem;
+    }
+}
+
+.blog__sns-box-twitter {
+    background-color: $color-twitter;
+    padding: 0.4rem 1.3rem 0.4rem 1.4rem;
+
+    p {
+        padding-left: 0.7rem;
+    }
+}
+
+.blog__sns-box-hatena {
+    background-color: $color-hatena;
+    padding: 0.4rem 1.3rem 0.4rem 1.3rem;
+
+    p {
+        padding-left: 1.2rem;
+    }
+}
+
+.blog__sns-box-line {
+    background-color: $color-line;
+    padding: 0.4rem 1.7rem 0.4rem 1.4rem;
+
+    p {
+        padding-left: 0.7rem;
+    }
+}
+
+.blog__sns-box-pocket {
+    background-color: $color-pocket;
+    padding: 0.4rem 1.3rem 0.4rem 1.3rem;
+
+    p {
+        padding-left: 0.9rem;
+    }
+}
+
+// text --------------------------------
+.blog-details-main__text-p1 {
+    @include text-style(1.8rem, calc(30/18));
+    font-weight: 500;
+    margin-top: 4.8rem;
+}
+
+.blog-details-main__text-h2 {
+    @include text-style(2rem, calc(40/20));
+    margin-top: 3.3rem;
+}
+
+.blog-details-main__text-p2 {
+    @include text-style(1.8rem, calc(30/18));
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+// image --------------------------------
+.blog-details-main__image {
+    width: 33.5rem;
+    aspect-ratio: 33.5 / 20;
+    margin-top: 1.7rem;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// list --------------------------------
+.blog-details-main__list {
+    margin-top: 2.8rem;
+    @include text-style(1.8rem, calc(30/18));
+    font-weight: 500;
+}
+
+// border --------------------------------
+.blog-details-main__border {
+    margin-top: 4rem;
+    border-top: 0.5px solid $color-text;
+}
+
+// text--------------------------------
+.blog-details-main__text-h3 {
+    margin-top: 4.3rem;
+    position: relative;
+    padding-left: 1rem;
+
+    h3 {
+        @include text-style(2rem, calc(40/20));
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 43%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            width: 0.3rem;
+            height: 2rem;
+            background-color: $color-text;
+        }
+    }
+}
+
+// callout-box--------------------------------
+.blog-details-main__callout-box {
+    margin-top: 1.7rem;
+    background-color: $color-band;
+    position: relative;
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        padding: 1.8rem 3rem 1rem 6.7rem;
+    }
+}
+
+.blog-details-main__callout-box-image {
+    width: 2.7rem;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    img {
+        width: 100%;
+    }
+}
+
+// textlink--------------------------------
+.blog-details-main__text-link {
+    margin-top: 3.4rem;
+    a {
+        @include text-style(2rem, calc(33/20));
+        line-height: 1;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $color-main;
+        }
+    }
+
+    a:hover {
+        @include hover-opacity;
+    }
+}
+
+// article-before&after--------------------------------
+.blog-details-main__article-before-after{
+    display: flex;
+    margin-top: 5.7rem;
+    gap: 8rem;
+}
+
+// 共通項目
+.blog-before-after__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.blog-before-after__item {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.blog-before-after__title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+    p{
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+    }
+
+    a {
+        &:hover {
+            @include hover-opacity;
+        }
+    }
+}
+
+.blog-before-after__item-image {
+    width: 9.8rem;
+    aspect-ratio: 9.8 / 6.8;
+
+    picture {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.blog-before-after__item-text {
+    flex: 1;
+    p {
+        @include text-style(1.6rem, calc(25/16));
+    }
+}
+
+// before
+.blog-before-content {
+    p{
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+// after
+.blog-after-content {
+    p{
+        padding-right: 2rem;
+        text-align: right;
+    }
+}
+
+// article--------------------------------
+.blog-details-main__article {
+    margin-top: 9.5rem;
+}
+
+.blog__main__article-title {
+    h2 {
+        @include text-style(1.8rem, calc(33/18));
+        padding: 0.9rem 0 0.8rem 3rem;
+    }
+}
+
+.blog__main__article-items {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+// card
+.blog__main__article-items-card {
+    display: flex;
+    gap: 3rem;
+}
+
+.blog-article__card-image {
+    width: 20rem;
+    aspect-ratio: 20 / 14;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.blog-article__card-text {
+    flex: 1;
+    h3 {
+        @include text-style(2rem, calc(25/20));
+    }
+
+    time {
+        display: block;
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        margin-top: 1.3rem;
+        padding-left: 0.5rem;
+    }
+}
+
+.blog-article__card-btn {
+    width: 8rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    @include text-style(1.5rem, calc(25/15));
+    padding-top: 0.2rem;
+    @include sp {
+        width: 9rem;
+    }
+}
+
+
+// ----------------------------------------------------------------
+// side
+// ----------------------------------------------------------------
+
+// 無料メールマガジン 
+.blog-details-side__free__magazine-box {
+    border: 0.5px solid $color-text;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    span {
+        display: block;
+        width: 22rem;
+        height: 17rem;
+        background-color: $color-band;
+    }
+
+    p {
+        @include text-style(1.8rem, calc(33/18));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+// ブログ内を検索
+.blog-details-side__search {
+    margin-top: 3rem;
+}
+
+.blog-details-side__search-box {
+    border: 0.5px solid $color-text;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-details-side__search__box-input {
+    width: 18rem;
+    height: 4rem;
+    background-color: $color-band;
+}
+
+.blog-details-side__search__box-image {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-text;
+}
+
+// おすすめの記事
+.blog-details-side__recommend {
+    margin-top: 3rem;
+}
+
+.blog-details-side__recommend-box {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-details-side__recommend__box-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.blog-details-side__recommend__box__item-image {
+    width: 9.5rem;
+    height: 7.5rem;
+    background-color: $color-band;
+}
+
+.blog-details-side__recommend__box__item-text {
+    flex: 1;
+    p {
+        @include text-style(1.7rem, calc(28/17));
+        font-weight: 500;
+    }
+}
+
+
+// カテゴリー
+.blog-details-side__category {
+    margin-top: 3rem;
+}
+
+.blog-details-side__category__box-item {
+    p {
+        @include text-style(1.7rem, calc(28/17));
+        font-weight: 500;
+        padding-top: 1.2rem;
+        padding-bottom: 0.67rem;
+        border-bottom: 0.5px solid $color-text;
+    }
+} 
+
+
+
+
+
+

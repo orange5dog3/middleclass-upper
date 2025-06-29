@@ -113,3 +113,14 @@
         left: 0;
     }
 }
+
+.c-blog-side__title {
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        @include text-style(1.8rem, calc(33/18));
+    }
+}
