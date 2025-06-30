@@ -1,0 +1,298 @@
+.result-details-content {
+    padding-top: 7rem;
+    padding-bottom: 6.8rem;
+    @include sp {
+        padding-top: 5.1rem;
+        padding-bottom: 11rem;
+    }
+}
+
+
+// main-card--------------------------------
+// card
+.result-main__card-image {
+    width: 100%;
+    aspect-ratio: 88 / 40;
+    @include sp {
+        aspect-ratio: 335 / 236;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.result-main__card-text {
+    h3 {
+        @include text-style(2.5rem, calc(40/25));
+        margin-top: 5rem;
+
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+            margin-top: 3rem;
+        }
+    }
+
+    time {
+        display: block;
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        margin-top: 1.3rem;
+        @include sp {
+            margin-top: 0.3rem;
+            padding-left: 0;
+        }
+    }
+
+    span {
+        display: inline-block;
+        @include sp {
+            display: none;
+        }
+    }
+}
+
+.result-main__card-btn {
+    width: 10rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    @include text-style(1.5rem, calc(25/15));
+    padding-top: 0.2rem;
+}
+
+// profile--------------------------------
+.result-details-profile {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    @include sp {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 2.3rem;
+    }
+}
+
+.result__profile__grid-box {
+    display: grid;
+    width: 40rem;
+    grid-template-columns: 14rem 1fr;
+
+    @include sp {
+        width: 33.5rem;   
+        grid-template-columns: 12rem 1fr;
+    }
+}
+
+.profile__grid-item {
+    padding-left:2rem;
+    padding-top: 0.7rem;
+    @include text-style(1.8rem, calc(30/18));
+    border: 0.5px solid #707070;
+    @include sp {
+        padding-left: 1rem;
+    }
+}
+
+.profile-left {
+    background-color: #E5E5E5;
+}
+
+.profile-right {
+    @include text-style(1.8rem, calc(30/18));
+    font-weight: 500;
+}
+
+.result__profile__text {
+    flex: 1;
+    padding-right: 1rem;
+    @include sp {
+        width: 100%;
+    }
+
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        @include sp {
+            margin-top: 2.8rem;
+        }
+    }
+}
+
+
+// article-before&after--------------------------------
+.result-details-main__article-before-after{
+    display: flex;
+    margin-top: 6rem;
+    gap: 20rem;
+    @include sp {
+        margin-top: 4rem;
+        gap: 2.2rem;
+    }
+}
+
+// 共通項目
+.result-before-after__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.result-before-after__item {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.result-before-after__title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+    p{
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+    }
+
+    a {
+        &:hover {
+            @include hover-opacity;
+        }
+    }
+}
+
+.result-before-after__item-image {
+    width: 9.8rem;
+    aspect-ratio: 9.8 / 6.8;
+
+    picture {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.result-before-after__item-text {
+    flex: 1;
+    p {
+        @include text-style(1.6rem, calc(25/16));
+    }
+}
+
+// before
+.result-before-content {
+    p{
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+// after
+.result-after-content {
+    p{
+        padding-right: 2rem;
+        text-align: right;
+    }
+}
+
+// article--------------------------------
+.result-details-main__article {
+    margin-top: 10rem;
+    @include sp {
+        margin-top: 6.1rem;
+    }
+}
+
+.result__article-title {
+    h2 {
+        @include text-style(1.8rem, calc(33/18));
+        padding: 0.9rem 0 0.8rem 3rem;
+        @include sp {
+            text-align: center;
+            padding:1rem 0;
+        }
+    }
+}
+
+.result__article-items {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include sp {
+        margin-top: 1.9rem;
+        gap: 2rem;
+    }
+}
+
+// card
+.result__article-items-card {
+    display: flex;
+    gap: 3rem;
+    @include sp {
+        gap: 2rem;
+    }
+}
+
+.result-article__card-image {
+    width: 26rem;
+    aspect-ratio: 260 / 183;
+    @include sp {
+        width: 16rem;
+        aspect-ratio: 16 / 11;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.result-article__card-text {
+    flex: 1;
+    h3 {
+        @include text-style(2rem, calc(25/20));
+        @include sp {
+            @include text-style(1.7rem, calc(28/17));
+            margin-top: 0.8rem;
+            @include sp {
+                margin-top: 0;
+            }
+        }
+    }
+
+    time {
+        display: block;
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        margin-top: 1.3rem;
+        padding-left: 0.5rem;
+        @include sp {
+            margin-top: 0.3rem;
+            padding-left: 0;
+        }
+    }
+
+    span {
+        display: inline-block;
+        @include sp {
+            display: none;
+        }
+    }
+}
+
+.result-article__card-btn {
+    width: 10rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    @include text-style(1.5rem, calc(25/15));
+    padding-top: 0.2rem;
+    @include sp {
+        width: 8rem;
+    }
+    // sp時赤ボタンの中身がpcと違うのでpcの文字に合わせました
+}
