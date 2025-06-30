@@ -3592,6 +3592,7 @@ footer {
 @media screen and (max-width: 767px) {
   .result-list__main-items {
     gap: 3.9rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
