@@ -105,5 +105,46 @@ a {
     }
 }
 
+// Slickスライダーの矢印------------------------------------
+.voice-slider {
+    position: relative;
+    
+    .slick-list {
+        margin: 0 -1.75rem; // gap: 3.5remの半分をnegative margin
+        overflow: hidden;
+    }
+    
+    .slick-slide {
+        padding: 0 1.75rem; // gap: 3.5remの半分をpadding
+    }
 
+}
 
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+    @include transition;
+    @include sp {
+        top: 41%;
+    }
+}
+
+.slick-prev {
+    left: -4rem;
+    
+    @include sp {
+        left: 0.5rem;
+    }
+}
+
+.slick-next {
+    right: -4rem;
+    
+    @include sp {
+        right: 0.5rem;
+    }
+}
