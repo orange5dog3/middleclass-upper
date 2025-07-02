@@ -101,11 +101,6 @@ header {
         a {
             padding-inline: 0.5rem;
             height: inherit;
-            text-decoration: none;
-            @include transition;
-            &:hover:not(.c__btn) {
-                @include hover-opacity;
-            }
         }
     }
 }
