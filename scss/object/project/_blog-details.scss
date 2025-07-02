@@ -326,9 +326,6 @@
         }
     }
 
-    a:hover {
-        @include hover-opacity;
-    }
 }
 
 // article-before&after--------------------------------
@@ -362,11 +359,6 @@
         font-weight: 500;
     }
 
-    a {
-        &:hover {
-            @include hover-opacity;
-        }
-    }
 }
 
 .blog-before-after__item-image {

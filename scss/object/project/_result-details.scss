@@ -153,11 +153,6 @@
         font-weight: 500;
     }
 
-    a {
-        &:hover {
-            @include hover-opacity;
-        }
-    }
 }
 
 .result-before-after__item-image {

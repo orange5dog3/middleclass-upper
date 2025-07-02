@@ -406,6 +406,15 @@ h1, h2, h3, h4, label, input, a, ul, li {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+a:hover:not([class*=btn]):not(.c-btn) {
+  opacity: 0.5;
+}
+
 .inner {
   max-width: 94rem;
   padding-inline: 3rem;
@@ -599,12 +608,6 @@ header {
 .header__nav li a {
   padding-inline: 0.5rem;
   height: inherit;
-  text-decoration: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-.header__nav li a:hover:not(.c__btn) {
-  opacity: 0.5;
 }
 
 .header__nav-link {
@@ -3032,9 +3035,6 @@ footer {
   height: 1px;
   background-color: #CB0000;
 }
-.blog-details-main__text-link a:hover {
-  opacity: 0.5;
-}
 
 .blog-details-main__article-before-after {
   display: -webkit-box;
@@ -3076,9 +3076,6 @@ footer {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   font-weight: 500;
-}
-.blog-before-after__title a:hover {
-  opacity: 0.5;
 }
 
 .blog-before-after__item-image {
@@ -4042,9 +4039,6 @@ footer {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   font-weight: 500;
-}
-.result-before-after__title a:hover {
-  opacity: 0.5;
 }
 
 .result-before-after__item-image {
