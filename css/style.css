@@ -406,13 +406,13 @@ h1, h2, h3, h4, label, input, a, ul, li {
   display: block;
 }
 
-a {
-  text-decoration: none;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+.header-padding {
+  padding-top: 8rem;
 }
-a:hover:not([class*=btn]):not(.c-btn) {
-  opacity: 0.5;
+@media screen and (max-width: 767px) {
+  .header-padding {
+    padding-top: 5rem;
+  }
 }
 
 .inner {
@@ -442,6 +442,15 @@ a:hover:not([class*=btn]):not(.c-btn) {
     display: block;
   }
 }
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+a:hover:not([class*=btn]):not(.c-btn) {
+  opacity: 0.5;
+}
+
 #upper-arrow {
   display: none;
   position: fixed;
@@ -623,6 +632,11 @@ a:hover:not([class*=btn]):not(.c-btn) {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,6 +656,9 @@ header {
     height: 5rem;
     padding: 1rem 0 1rem 1.7rem;
   }
+}
+header.scrolled {
+  background-color: #ffffff;
 }
 
 .header__title {
