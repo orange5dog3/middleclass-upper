@@ -19,3 +19,22 @@ questionTriggers.forEach(trigger => {
         item.classList.toggle('is-open');
     });
 });
+
+// ==========================================================================
+// upper-arrow scroll control
+// ==========================================================================
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+        $('#upper-arrow').fadeIn();
+    } else {
+        $('#upper-arrow').fadeOut();
+    }
+});
+
+// スムーススクロール
+$('#upper-arrow a').click(function() {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+});

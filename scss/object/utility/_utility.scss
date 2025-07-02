@@ -1,1 +1,18 @@
 // イレギュラーなパターンのみ
+.u-upper-arrow-index {
+    right: 11.5rem;
+    bottom: 33rem;
+    @include sp{
+        right: 2rem;
+        bottom: 39rem;
+    }
+}
+
+.u-upper-arrow-contact {
+    right: 10.2rem;
+    bottom: 30.5rem;
+    @include sp{
+        right:3rem;
+        bottom: 33.5rem;
+    }
+}

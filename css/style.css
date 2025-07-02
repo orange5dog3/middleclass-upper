@@ -433,6 +433,35 @@ h1, h2, h3, h4, label, input, a, ul, li {
     display: block;
   }
 }
+#upper-arrow {
+  display: none;
+  position: fixed;
+  width: 6.8rem;
+  height: 6.8rem;
+  z-index: 999;
+}
+#upper-arrow a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#upper-arrow a:hover {
+  opacity: 0.7;
+}
+#upper-arrow img {
+  position: absolute;
+  width: 2.3rem;
+  height: 1.6rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4175,5 +4204,27 @@ footer {
 @media screen and (max-width: 767px) {
   .result-article__card-btn {
     width: 8rem;
+  }
+}
+
+.u-upper-arrow-index {
+  right: 11.5rem;
+  bottom: 33rem;
+}
+@media screen and (max-width: 767px) {
+  .u-upper-arrow-index {
+    right: 2rem;
+    bottom: 39rem;
+  }
+}
+
+.u-upper-arrow-contact {
+  right: 10.2rem;
+  bottom: 30.5rem;
+}
+@media screen and (max-width: 767px) {
+  .u-upper-arrow-contact {
+    right: 3rem;
+    bottom: 33.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
