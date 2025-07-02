@@ -54,6 +54,39 @@ h1,h2,h3,h4,label,input,a,ul,li {
     }
 }
 
+// 上部に戻るボタン
+#upper-arrow {
+    display: none;
+    position: fixed;
+    width: 6.8rem;
+    height: 6.8rem;
+    
+    z-index: 999;
+    
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 2.3rem;
+        height: 1.6rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
 //サイズ用関数
 //$pixelsVw:サイズ
 //$baseWidth:ベースとなる画面横幅
