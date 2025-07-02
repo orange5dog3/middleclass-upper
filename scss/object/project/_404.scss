@@ -1,0 +1,38 @@
+.not-found__view {
+    &-text {
+        top: 51% !important;
+    }
+}
+
+
+.not-found-text {
+    margin-top: 6.8rem;
+    text-align: center;
+    @include sp {
+        margin-top: 4.3rem;
+        text-align: left;
+    }
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+}
+
+
+// 送信ボタン
+.btn-not-found {
+    display: block;
+    margin: 4rem auto 9rem; 
+    width: 25rem;
+    height: 5rem;
+    @include text-style(2.5rem, calc(33/25));
+    @include sp {
+        margin: 0.9rem auto 5rem;
+        width: 33.5rem;
+        height: 5rem;
+        @include text-style(2rem, calc(36/20));
+    }
+}
