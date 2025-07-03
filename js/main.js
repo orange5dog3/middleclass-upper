@@ -1,4 +1,20 @@
 // ==========================================================================
+// header scroll background
+// ==========================================================================
+$(window).scroll(function() {
+    const scrollTop = $(this).scrollTop();
+    const fvHeight = $('#first-view').outerHeight(); // 
+    
+    if (scrollTop > fvHeight) {
+        $('header').addClass('scrolled');
+    } else {
+        $('header').removeClass('scrolled');
+    }
+});
+
+
+
+// ==========================================================================
 // hamburger
 // ==========================================================================
 

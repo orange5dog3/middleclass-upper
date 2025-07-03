@@ -27,8 +27,17 @@
 
 
 .blog__box-item {
+    display: block;
     width: 26rem;
     position: relative;
+    color: inherit;
+    text-decoration: none;
+    @include transition;
+    
+    &:hover {
+        @include hover-opacity;
+    }
+    
     @include sp {
         width: 100%;
     }
