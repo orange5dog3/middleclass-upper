@@ -40,7 +40,12 @@ questionTriggers.forEach(trigger => {
 // upper-arrow scroll control
 // ==========================================================================
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
+    const scrollTop = $(this).scrollTop();
+    const fvHeight = $('#first-view').outerHeight();
+    const mainPaddingTop = parseInt($('.header-padding').css('padding-top'));
+    const threshold = fvHeight + mainPaddingTop;
+    
+    if (scrollTop > threshold) {
         $('#upper-arrow').fadeIn();
     } else {
         $('#upper-arrow').fadeOut();

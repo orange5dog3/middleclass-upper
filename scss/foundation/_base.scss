@@ -69,16 +69,11 @@ h1,h2,h3,h4,label,input,a,ul,li {
     @return calc($pixelsVw / $baseWidth * 100vw);
   }
 
-// 基本的なaタグのhover効果------------------------------------
+// 基本的なaタグの設定------------------------------------
 a {
     text-decoration: none;
     @include transition;
-    
-    &:hover:not([class*="btn"]):not(.c-btn) {
-        @include hover-opacity;
-    }
 }
-
 
 
 // 上部に戻るボタン------------------------------------
