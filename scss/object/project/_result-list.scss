@@ -52,6 +52,11 @@
 }
 
 // card
+.result-list__items-card {
+    color: inherit;
+    text-decoration: none;
+    @include transition;
+}
 
 .result-list__card-image {
     width: 100%;
@@ -141,6 +146,7 @@
         &:hover {
           background-color: $color-text;
           color: $color-white;
+          opacity: 1 !important; 
         }
       }
   

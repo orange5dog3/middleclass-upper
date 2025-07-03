@@ -14,10 +14,11 @@
     }
 }
 
-
 // 送信ボタン
 .btn-contact-send {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 4rem auto 9rem;
     width: 25rem;
     height: 5rem;

@@ -99,5 +99,9 @@
         text-decoration-thickness: 0.5px;
         text-underline-offset: 0.3rem;
         display: inline-block;
+        
+        &:hover {
+            @include hover-opacity;
+        }
     }
 }

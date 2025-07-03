@@ -1,9 +1,15 @@
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
+    &.scrolled {
+        background-color: $color-white;
+    }
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,9 +22,7 @@ header {
         padding: 1rem 0 1rem 1.7rem;
     }
 
-    &.scrolled {
-        background-color: $color-white;
-    }
+    
 }
 
 .header__title{
@@ -52,6 +56,10 @@ header {
     height: inherit;
     position: relative;
     padding-left: 4.2rem;
+    
+    &:hover {
+        @include hover-opacity;
+    }
     
     @include sp {
         padding-left: 3rem;
@@ -110,6 +118,10 @@ header {
         a {
             padding-inline: 0.5rem;
             height: inherit;
+            
+            &:hover {
+                @include hover-opacity;
+            }
         }
     }
 }
