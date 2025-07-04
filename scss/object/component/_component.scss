@@ -98,7 +98,7 @@
 
     @include sp {
         padding-left: 2rem;
-        padding-top: 0.8rem;
+        padding-top: 1rem;
         padding-bottom: 0.3rem;
     }
 
@@ -107,6 +107,9 @@
         line-height: 1.5;
         font-weight: 500;
         color: $color-text;
+        @include sp {
+            line-height: 1.3;
+        }
     }
 
 
