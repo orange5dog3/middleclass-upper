@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem 9.7rem 0 10rem;
+    padding: 0.4rem 10rem 0 10rem;
     max-width: 108rem;
     height: 8rem;
     margin: 0 auto;
@@ -109,7 +109,7 @@
         display: flex;
         height: inherit;
         align-items: center;
-        gap: 2.5rem;
+        gap: 1.3rem;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -121,7 +121,7 @@
         align-items: center;
         
         a {
-            padding-inline: 0.5rem;
+            padding-inline: 1rem;
             display: flex;
             align-items: center;
             
@@ -143,6 +143,7 @@
 .btn-header {
     @include text-style(1.5rem, calc(33/15));
     padding: 0.5rem 3rem!important;
+    margin-left: 0.7rem;
 }
 
 /* hamburger menu */
