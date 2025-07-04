@@ -1,7 +1,7 @@
 .plan__main {
-    padding-bottom: 13.6rem;
+    padding-bottom: 22.3rem;
     @include sp {
-        padding-bottom: 9.9rem;
+        padding-bottom: 18.5rem;
     }
 }
 
@@ -99,7 +99,7 @@
     margin-top: 5.5rem;
     @include sp {
         grid-template-columns: repeat(4, 16.75rem);
-        margin-top: 0.5rem;
+        margin-top: 0.8rem;
     }
 }
   
@@ -110,6 +110,11 @@
     justify-content: center;
     align-items: center;
     height: 8.5rem; 
+    padding-top: 0.3rem;
+    @include sp {
+        padding-top: 0.5rem;
+    }
+
 
     h3 {
         @include text-style(2.2rem, calc(33/20));
@@ -174,8 +179,8 @@
 }
 
 .plan__table-normal {
-    padding-top: 1.4rem;
-    padding-bottom: 0.6rem;
+    padding-top: 1.1rem;
+    padding-bottom: 0.5rem;
     @include sp {
         padding-top: 1rem;
         padding-bottom: 0.7rem;
@@ -210,6 +215,7 @@
 .plan__table-border {
     span{
         width: 3rem;
+        margin-bottom: 0.5rem;
         border: 0.1rem solid #707070;
         display: block;
     }
@@ -262,9 +268,9 @@
 
 
 .plan__plan-plz-contact {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     @include sp {
-        margin-top: 2.1rem;
+        margin-top: 1.9rem;
     }
     p {
         @include text-style(1.7rem, calc(25/17));

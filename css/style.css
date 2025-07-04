@@ -690,7 +690,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.4rem 9.7rem 0 10rem;
+  padding: 0.4rem 10rem 0 10rem;
   max-width: 108rem;
   height: 8rem;
   margin: 0 auto;
@@ -813,7 +813,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.5rem;
+  gap: 1.3rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -828,7 +828,7 @@ a {
           align-items: center;
 }
 .header__nav li a {
-  padding-inline: 0.5rem;
+  padding-inline: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,6 +856,7 @@ a {
   font-size: 1.5rem;
   line-height: 2.2;
   padding: 0.5rem 3rem !important;
+  margin-left: 0.7rem;
 }
 
 /* hamburger menu */
@@ -2095,11 +2096,11 @@ footer {
 }
 
 .plan__main {
-  padding-bottom: 13.6rem;
+  padding-bottom: 22.3rem;
 }
 @media screen and (max-width: 767px) {
   .plan__main {
-    padding-bottom: 9.9rem;
+    padding-bottom: 18.5rem;
   }
 }
 
@@ -2228,7 +2229,7 @@ footer {
 @media screen and (max-width: 767px) {
   .plan__plan-table {
     grid-template-columns: repeat(4, 16.75rem);
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -2245,6 +2246,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 8.5rem;
+  padding-top: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .plan__table-cell {
+    padding-top: 0.5rem;
+  }
 }
 .plan__table-cell h3 {
   font-size: 2.2rem;
@@ -2322,8 +2329,8 @@ footer {
 }
 
 .plan__table-normal {
-  padding-top: 1.4rem;
-  padding-bottom: 0.6rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.5rem;
 }
 @media screen and (max-width: 767px) {
   .plan__table-normal {
@@ -2362,6 +2369,7 @@ footer {
 
 .plan__table-border span {
   width: 3rem;
+  margin-bottom: 0.5rem;
   border: 0.1rem solid #707070;
   display: block;
 }
@@ -2412,11 +2420,11 @@ footer {
 }
 
 .plan__plan-plz-contact {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 767px) {
   .plan__plan-plz-contact {
-    margin-top: 2.1rem;
+    margin-top: 1.9rem;
   }
 }
 .plan__plan-plz-contact p {
@@ -4545,4 +4553,17 @@ footer {
 
 .u-2-pb {
   padding-bottom: 0.6rem;
+}
+
+.u-plan-p {
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .u-plan-p {
+    padding-top: 1em;
+  }
+}
+.u-plan-p p {
+  line-height: 1;
 }/*# sourceMappingURL=style.css.map */
