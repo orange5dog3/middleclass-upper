@@ -1,5 +1,5 @@
 .top__flow {
-    padding: 3.4rem 0 6.5rem;
+    padding: 3.4rem 0 8.3rem;
     @include sp {
         padding: 4.5rem 0 5rem;
     }
@@ -17,30 +17,57 @@
 .flow__box-wrapper {
     display: flex;
     position: relative;
-    padding-left: 4.5rem;
+    padding-left: 8rem;
     gap:4.3rem;
     @include sp {
-        margin: 0 auto;
         gap: 1.3rem;
-        padding-left: 0;
+        padding-left: 3.5rem;
     }
 }
 
 .flow__box-image {
-    margin-top: 7.5rem;
-    height: 41rem;
 
-    // img {
-    //     height: 100%;
-    // }
+    span {
+        position: absolute;
+        top: 6rem;
+        left: 6.1rem;
+        height: 90%;
+        background-color: $color-main;
+        width: 0.3rem;
 
-    @include sp-500-767 {
-        height: 30rem;
-    }
 
-    @include sp {
-        margin-top: 5.7rem;
-        height: 66.8rem;
+
+        @include sp {
+            top: 5rem;
+            left: 1.6rem;
+            height: 91%;
+
+        }
+        
+        
+    
+        
+        &::before {
+            content: '';
+            position: absolute;
+            right: -0.75rem;
+            bottom: -0.7rem;
+            transform: rotate(45deg);
+            width: 0.3rem;
+            height: 2.5rem;
+            background-color: $color-main;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0.75rem;
+            bottom: -0.7rem;
+            transform: rotate(-45deg);
+            width: 0.3rem;
+            height: 2.5rem;
+            background-color: $color-main;
+        }
     }
 }
 
