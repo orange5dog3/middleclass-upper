@@ -2100,7 +2100,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .plan__main {
-    padding-bottom: 9.9rem;
+    padding-bottom: 18.5rem;
   }
 }
 
@@ -2229,7 +2229,7 @@ footer {
 @media screen and (max-width: 767px) {
   .plan__plan-table {
     grid-template-columns: repeat(4, 16.75rem);
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -2247,6 +2247,11 @@ footer {
           align-items: center;
   height: 8.5rem;
   padding-top: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .plan__table-cell {
+    padding-top: 0.5rem;
+  }
 }
 .plan__table-cell h3 {
   font-size: 2.2rem;
@@ -2419,7 +2424,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .plan__plan-plz-contact {
-    margin-top: 2.1rem;
+    margin-top: 1.9rem;
   }
 }
 .plan__plan-plz-contact p {
@@ -4553,6 +4558,11 @@ footer {
 .u-plan-p {
   padding-top: 0.8rem;
   padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .u-plan-p {
+    padding-top: 1em;
+  }
 }
 .u-plan-p p {
   line-height: 1;

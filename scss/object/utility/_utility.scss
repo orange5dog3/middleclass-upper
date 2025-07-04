@@ -24,6 +24,11 @@
 .u-plan-p {
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
+
+    @include sp {
+        padding-top: 1em;
+    }
+
     p {
     line-height: 1;
     }
