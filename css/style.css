@@ -1205,7 +1205,7 @@ footer {
 @media screen and (max-width: 767px) {
   .c-band {
     padding-left: 2rem;
-    padding-top: 0.8rem;
+    padding-top: 1rem;
     padding-bottom: 0.3rem;
   }
 }
@@ -1215,6 +1215,11 @@ footer {
   line-height: 1.5;
   font-weight: 500;
   color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .c-band-text {
+    line-height: 1.3;
+  }
 }
 
 .c-blog__card {
@@ -4536,4 +4541,8 @@ footer {
     right: 3rem;
     bottom: 33.5rem;
   }
+}
+
+.u-2-pb {
+  padding-bottom: 0.6rem;
 }/*# sourceMappingURL=style.css.map */
