@@ -19,7 +19,8 @@
         font-weight:500;
         @include text-style(1.8rem, calc(30/18));
         @include sp {
-            margin: 0;
+            margin-left: -0.7rem;
+            margin-right: 0.5rem;
         }
     }
 }

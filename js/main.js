@@ -53,16 +53,37 @@ $(window).scroll(function() {
         const scrollPosition = $(window).height() + $(window).scrollTop();/*ページの一番上からスクロールされた距離*/
         const footHeight = $("footer").outerHeight();/*フッターの高さ*/
 
+        // SP版判定（768px未満）
+        const isMobile = $(window).width() < 768;
+        
         if ( scrollHeight - scrollPosition  <= footHeight ) {
-            $("#upper-arrow").css({
-                "position":"absolute",
-                "bottom": footHeight + 90, // footer上6rem分の位置
-            });
+            if (isMobile) {
+                // SP版：footer到達時
+                $("#upper-arrow").css({
+                    "position":"absolute",
+                    "bottom": footHeight + 78, 
+                });
+            } else {
+                // PC版：footer到達時
+                $("#upper-arrow").css({
+                    "position":"absolute",
+                    "bottom": footHeight + 90, 
+                });
+            }
         } else {
-            $("#upper-arrow").css({
-                "position":"fixed",
-                "bottom": "9rem",
-            });
+            if (isMobile) {
+                // SP版：通常時
+                $("#upper-arrow").css({
+                    "position":"fixed",
+                    "bottom": "7.8rem",
+                });
+            } else {
+                // PC版：通常時
+                $("#upper-arrow").css({
+                    "position":"fixed",
+                    "bottom": "9rem",
+                });
+            }
         }
     } else {
         $('#upper-arrow').fadeOut();

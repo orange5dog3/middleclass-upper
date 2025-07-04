@@ -107,6 +107,7 @@
 
     ul {
         display: flex;
+        height: inherit;
         align-items: center;
         gap: 2.5rem;
         list-style: none;
@@ -115,9 +116,14 @@
     }
 
     li {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        
         a {
             padding-inline: 0.5rem;
-            height: inherit;
+            display: flex;
+            align-items: center;
             
             &:hover {
                 @include hover-opacity;
@@ -128,6 +134,9 @@
 
 .header__nav-link {
     @include text-style(1.7rem, calc(33/17));
+    height: inherit;
+    display: flex;
+    align-items: center;
 }
 
 

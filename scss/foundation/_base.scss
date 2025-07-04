@@ -165,6 +165,10 @@ a {
 
 .slick-prev {
     left: -4rem;
+
+    @include pc-768-1000 {
+        left: -1.5rem;
+    }
     
     @include sp {
         left: 0.5rem;
@@ -173,6 +177,10 @@ a {
 
 .slick-next {
     right: -4rem;
+
+    @include pc-768-1000 {
+        right: -1.5rem;
+    }
     
     @include sp {
         right: 0.5rem;
