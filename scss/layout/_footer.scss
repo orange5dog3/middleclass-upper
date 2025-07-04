@@ -1,5 +1,5 @@
 footer {
-    padding: 3rem 0 4rem;
+    padding: 3.5rem 0 4rem;
     @include sp {
         padding: 3.8rem 0 5.5rem;
     }
@@ -42,7 +42,7 @@ footer {
 }
 
 .footer__copyright {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     @include text-style(1.5rem, calc(33/15));
     font-weight: 500;
     @include sp {
@@ -85,9 +85,11 @@ footer {
     right: 0;
     z-index: 999;
     @include sp {
-        text-align: center;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        white-space: nowrap;
     }
-    
     // footerに到達した時のスタイル
     &.footer-reached {
         position: absolute;

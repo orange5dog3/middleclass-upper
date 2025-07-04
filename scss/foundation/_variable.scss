@@ -43,6 +43,19 @@ $color-pocket: #DC4F5A;      // pocket
     }
 }
 
+@mixin pc-768-1000 {
+    @media screen and (min-width: 768px) and (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin sp-500-767 {
+    @media screen and (min-width: 500px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+
 // トランジション
 // -------------------------
 @mixin transition {

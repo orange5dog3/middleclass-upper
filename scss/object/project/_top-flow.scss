@@ -20,6 +20,7 @@
     padding-left: 4.5rem;
     gap:4.3rem;
     @include sp {
+        margin: 0 auto;
         gap: 1.3rem;
         padding-left: 0;
     }
@@ -28,9 +29,15 @@
 .flow__box-image {
     margin-top: 7.5rem;
     height: 41rem;
-    img {
-        height: 100%;
+
+    // img {
+    //     height: 100%;
+    // }
+
+    @include sp-500-767 {
+        height: 30rem;
     }
+
     @include sp {
         margin-top: 5.7rem;
         height: 66.8rem;
