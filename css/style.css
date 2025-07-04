@@ -448,6 +448,37 @@ a {
   transition: 0.5s ease;
 }
 
+#container {
+  position: relative;
+}
+
+.top__contact {
+  margin-top: 2.8rem;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+@media screen and (max-width: 767px) {
+  .top__contact {
+    text-align: center;
+  }
+}
+
+.btn-contact {
+  font-size: 2rem;
+  line-height: 1.65;
+  letter-spacing: 0.2em;
+  padding: 1.6rem 7.6rem 1.2rem;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .btn-contact {
+    padding: 1.3rem 9.6rem 0.8rem;
+  }
+}
+
 #upper-arrow {
   display: none;
   position: fixed;
@@ -1008,6 +1039,37 @@ footer {
 }
 .footer__sns ul a:hover {
   opacity: 0.5;
+}
+
+.top__contact {
+  margin-top: 2.8rem;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+@media screen and (max-width: 767px) {
+  .top__contact {
+    text-align: center;
+  }
+}
+.top__contact.footer-reached {
+  position: absolute;
+  bottom: auto;
+}
+
+.btn-contact {
+  font-size: 2rem;
+  line-height: 1.65;
+  letter-spacing: 0.2em;
+  padding: 1.6rem 7.6rem 1.2rem;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .btn-contact {
+    padding: 1.3rem 9.6rem 0.8rem;
+  }
 }
 
 .c-btn {
@@ -1836,7 +1898,7 @@ footer {
 }
 
 .top__blog {
-  padding: 11.5rem 0 11.7rem;
+  padding: 11.5rem 0 20.4rem;
 }
 @media screen and (max-width: 767px) {
   .top__blog {
@@ -1964,29 +2026,6 @@ footer {
 }
 .blog__linklist a:hover {
   opacity: 0.5;
-}
-
-.top__contact {
-  margin-top: 2.8rem;
-  text-align: right;
-}
-@media screen and (max-width: 767px) {
-  .top__contact {
-    text-align: center;
-  }
-}
-
-.btn-contact {
-  font-size: 2rem;
-  line-height: 1.65;
-  letter-spacing: 0.2em;
-  padding: 1.6rem 7.6rem 1.2rem;
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
-  .btn-contact {
-    padding: 1.3rem 9.6rem 0.8rem;
-  }
 }
 
 .plan__main {

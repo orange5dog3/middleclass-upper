@@ -75,6 +75,32 @@ a {
     @include transition;
 }
 
+// お問い合わせボタン------------------------------------
+#container {
+    position: relative;
+}
+
+.top__contact {
+    margin-top: 2.8rem;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    @include sp {
+        text-align: center;
+    }
+}
+
+.btn-contact {
+    @include text-style(2rem, calc(33/20));
+    letter-spacing: 0.2em;
+    padding: 1.6rem 7.6rem 1.2rem;
+    display: inline-block;
+    @include sp {
+        padding: 1.3rem 9.6rem 0.8rem;
+    }
+}
 
 // 上部に戻るボタン------------------------------------
 #upper-arrow {
