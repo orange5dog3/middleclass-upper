@@ -1248,7 +1248,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .c-blog-side__title {
-    width: 33.5rem;
+    width: 100%;
   }
 }
 .c-blog-side__title h2 {
@@ -3001,7 +3001,7 @@ footer {
   display: flex;
   gap: 3rem;
   padding-top: 7rem;
-  padding-bottom: 9.5rem;
+  padding-bottom: 19rem;
 }
 @media screen and (max-width: 767px) {
   .blog-details-content {
@@ -3531,6 +3531,14 @@ footer {
     margin-top: 0.8rem;
   }
 }
+.blog-article__card-text h3 span {
+  display: inline;
+}
+@media screen and (max-width: 767px) {
+  .blog-article__card-text h3 span {
+    display: none;
+  }
+}
 .blog-article__card-text time {
   display: block;
   font-size: 1.7rem;
@@ -3543,14 +3551,6 @@ footer {
   .blog-article__card-text time {
     margin-top: 0.3rem;
     padding-left: 0;
-  }
-}
-.blog-article__card-text span {
-  display: inline-block;
-}
-@media screen and (max-width: 767px) {
-  .blog-article__card-text span {
-    display: none;
   }
 }
 
@@ -3634,12 +3634,23 @@ footer {
   width: 18rem;
   height: 4rem;
   background-color: #E8E8E8;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
 }
 @media screen and (max-width: 767px) {
   .blog-details-side__search__box-input {
     width: 24.1rem;
     height: 5.4rem;
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
   }
+}
+.blog-details-side__search__box-input:focus {
+  background-color: rgba(232, 232, 232, 0.5);
 }
 
 .blog-details-side__search__box-image {
@@ -3655,12 +3666,19 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #000000;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 767px) {
   .blog-details-side__search__box-image {
     width: 5.4rem;
     height: 5.4rem;
   }
+}
+.blog-details-side__search__box-image:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 767px) {
   .blog-details-side__search__box-image img {
@@ -4554,8 +4572,10 @@ footer {
   }
 }
 
-.u-2-pb {
-  padding-bottom: 0.6rem;
+@media screen and (max-width: 767px) {
+  .u-2-pb {
+    padding-bottom: 0.6rem;
+  }
 }
 
 .u-plan-p {

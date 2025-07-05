@@ -68,7 +68,7 @@ $(window).scroll(function() {
                 // PC版：footer到達時
                 $("#upper-arrow1").css({
                     "position":"absolute",
-                    "right": "2rem",
+                    "right": "11.5rem",
                     "bottom": footHeight + 90, 
                 });
             }
@@ -84,7 +84,7 @@ $(window).scroll(function() {
                 // PC版：通常時
                 $("#upper-arrow1").css({
                     "position":"fixed",
-                    "right": "2rem",
+                    "right": "11.5rem",
                     "bottom": "9rem",
                 });
             }
