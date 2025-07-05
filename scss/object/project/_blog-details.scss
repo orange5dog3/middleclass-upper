@@ -345,6 +345,11 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+
+    a:hover {
+        @include hover-opacity;
+    }
+
 }
 
 .blog-before-after__item {
@@ -435,8 +440,15 @@
 .blog__main__article-items-card {
     display: flex;
     gap: 3rem;
+    color: inherit;
+    text-decoration: none;
+    @include transition;
     @include sp {
         gap: 2rem;
+    }
+    
+    &:hover {
+        @include hover-opacity;
     }
 }
 

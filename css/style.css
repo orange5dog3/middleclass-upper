@@ -2851,6 +2851,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   gap: 5rem;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 @media screen and (max-width: 767px) {
   .blog-blog__items-card {
@@ -2860,6 +2864,9 @@ footer {
             flex-direction: column;
     gap: 0;
   }
+}
+.blog-blog__items-card:hover {
+  opacity: 0.5;
 }
 
 .blog-blog__card-image {
@@ -3409,6 +3416,9 @@ footer {
           flex-direction: column;
   gap: 1.6rem;
 }
+.blog-before-after__content a:hover {
+  opacity: 0.5;
+}
 
 .blog-before-after__item {
   display: -webkit-box;
@@ -3505,11 +3515,18 @@ footer {
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 @media screen and (max-width: 767px) {
   .blog__main__article-items-card {
     gap: 2rem;
   }
+}
+.blog__main__article-items-card:hover {
+  opacity: 0.5;
 }
 
 .blog-article__card-image {
@@ -4104,6 +4121,9 @@ footer {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+.result-list__items-card:hover {
+  opacity: 0.5;
+}
 
 .result-list__card-image {
   width: 100%;
@@ -4402,6 +4422,9 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.6rem;
+}
+.result-before-after__content a:hover {
+  opacity: 0.5;
 }
 
 .result-before-after__item {

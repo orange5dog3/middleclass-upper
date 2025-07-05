@@ -26,9 +26,16 @@
 .blog-blog__items-card {
     display: flex;
     gap: 5rem;
+    color: inherit;
+    text-decoration: none;
+    @include transition;
     @include sp {
         flex-direction: column;
         gap: 0;
+    }
+    
+    &:hover {
+        @include hover-opacity;
     }
 }
 
