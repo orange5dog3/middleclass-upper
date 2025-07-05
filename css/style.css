@@ -2802,13 +2802,13 @@ footer {
 }
 
 .blog-blog-list__main {
-  padding-top: 7.2rem;
-  padding-bottom: 12.2rem;
+  padding-top: 7.3rem;
+  padding-bottom: 21rem;
 }
 @media screen and (max-width: 767px) {
   .blog-blog-list__main {
     padding-top: 5.5rem;
-    padding-bottom: 11.5rem;
+    padding-bottom: 20rem;
   }
 }
 
@@ -2893,7 +2893,6 @@ footer {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   font-weight: 500;
-  margin-top: 1rem;
 }
 @media screen and (max-width: 767px) {
   .blog-blog__card-text time {
@@ -2902,13 +2901,15 @@ footer {
   }
 }
 .blog-blog__card-text p {
-  font-size: 1.6rem;
-  line-height: 1.875;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
   font-weight: 500;
   margin-top: 1.4rem;
 }
 @media screen and (max-width: 767px) {
   .blog-blog__card-text p {
+    font-size: 1.6rem;
+    line-height: 1.875;
     margin-top: 0.9rem;
   }
 }
@@ -2939,7 +2940,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .blog-blog__pagination {
-    margin-top: 5.8rem;
+    margin-top: 6rem;
   }
 }
 .blog-blog__pagination-list {
