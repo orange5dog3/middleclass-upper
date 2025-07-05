@@ -138,6 +138,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+
+    a:hover {
+        @include hover-opacity;
+    }
 }
 
 .result-before-after__item {
