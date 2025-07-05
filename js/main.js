@@ -37,7 +37,7 @@ questionTriggers.forEach(trigger => {
 });
 
 // ==========================================================================
-// upper-arrow scroll control
+// upper-arrow1 scroll control
 // ==========================================================================
 $(window).scroll(function() {
     const scrollTop = $(this).scrollTop();
@@ -46,7 +46,7 @@ $(window).scroll(function() {
     const threshold = fvHeight + mainPaddingTop;
     
     if (scrollTop > threshold) {
-        $('#upper-arrow').fadeIn();
+        $('#upper-arrow1').fadeIn();
         
         // footer制御ロジック
         const scrollHeight = $(document).height();/*ページ全体の高さ*/
@@ -59,44 +59,115 @@ $(window).scroll(function() {
         if ( scrollHeight - scrollPosition  <= footHeight ) {
             if (isMobile) {
                 // SP版：footer到達時
-                $("#upper-arrow").css({
+                $("#upper-arrow1").css({
                     "position":"absolute",
+                    "right": "2rem",
                     "bottom": footHeight + 78, 
                 });
             } else {
                 // PC版：footer到達時
-                $("#upper-arrow").css({
+                $("#upper-arrow1").css({
                     "position":"absolute",
+                    "right": "2rem",
                     "bottom": footHeight + 90, 
                 });
             }
         } else {
             if (isMobile) {
                 // SP版：通常時
-                $("#upper-arrow").css({
+                $("#upper-arrow1").css({
                     "position":"fixed",
+                    "right": "2rem",
                     "bottom": "7.8rem",
                 });
             } else {
                 // PC版：通常時
-                $("#upper-arrow").css({
+                $("#upper-arrow1").css({
                     "position":"fixed",
+                    "right": "2rem",
                     "bottom": "9rem",
                 });
             }
         }
     } else {
-        $('#upper-arrow').fadeOut();
+        $('#upper-arrow1').fadeOut();
     }
 });
 
 // スムーススクロール
-$('#upper-arrow a').click(function() {
+$('#upper-arrow1 a').click(function() {
     $('html,body').animate({
         scrollTop: 0
     }, 500);
     return false;
 });
+
+// ==========================================================================
+// upper-arrow2 scroll control
+// ==========================================================================
+$(window).scroll(function() {
+    const scrollTop = $(this).scrollTop();
+    const fvHeight = $('#first-view').outerHeight();
+    const mainPaddingTop = parseInt($('.header-padding').css('padding-top'));
+    const threshold = fvHeight + mainPaddingTop;
+    
+    if (scrollTop > threshold) {
+        $('#upper-arrow2').fadeIn();
+        
+        // footer制御ロジック
+        const scrollHeight = $(document).height();/*ページ全体の高さ*/
+        const scrollPosition = $(window).height() + $(window).scrollTop();/*ページの一番上からスクロールされた距離*/
+        const footHeight = $("footer").outerHeight();/*フッターの高さ*/
+
+        // SP版判定（768px未満）
+        const isMobile = $(window).width() < 768;
+        
+        if ( scrollHeight - scrollPosition  <= footHeight ) {
+            if (isMobile) {
+                // SP版：footer到達時
+                $("#upper-arrow2").css({
+                    "position":"absolute",
+                    "right": "3rem",
+                    "bottom": footHeight + 18, 
+                });
+            } else {
+                // PC版：footer到達時
+                $("#upper-arrow2").css({
+                    "position":"absolute",
+                    "right": "10.2rem",
+                    "bottom": footHeight + 30, 
+                });
+            }
+        } else {
+            if (isMobile) {
+                // SP版：通常時
+                $("#upper-arrow2").css({
+                    "position":"fixed",
+                    "right": "3rem",
+                    "bottom": "1.8rem",
+                });
+            } else {
+                // PC版：通常時
+                $("#upper-arrow2").css({
+                    "position":"fixed",
+                    "right": "10.2rem",
+                    "bottom": "3rem",
+                });
+            }
+        }
+    } else {
+        $('#upper-arrow2').fadeOut();
+    }
+});
+
+// スムーススクロール
+$('#upper-arrow2 a').click(function() {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+});
+
 
 // ==========================================================================
 // contact button footer control

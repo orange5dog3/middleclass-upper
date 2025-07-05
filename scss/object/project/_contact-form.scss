@@ -2,7 +2,7 @@
     margin-top: 6.8rem;
     text-align: center;
     @include sp {
-        margin-top: 4.5rem;
+        margin-top: 5rem;
         text-align: left;
     }
     p {
@@ -19,7 +19,7 @@
 .contact-form-items {
     margin-top: 6.4rem;
     @include sp {
-        margin-top: 3.3rem;
+        margin-top: 3rem;
     }
 
     form {
@@ -206,6 +206,11 @@
             @include sp {
                 height: 17.7rem;
             }
+            
+            &::placeholder {
+                line-height: 1.7;
+          
+            }
         }
     }
 }
@@ -218,7 +223,7 @@
     height: 5rem;
     @include text-style(2.5rem, calc(33/25));
     @include sp {
-        margin: 3.8rem auto 11rem;
+        margin: 3.8rem auto 10.7rem;
         width: 33.5rem;
         height: 5rem;
         @include text-style(2rem, calc(36/20));
