@@ -26,8 +26,15 @@
 
 .voice__card {
     width: 27rem;
+    display: block;
+    color: inherit;
     @include sp {
         width: 100%;
+    }
+    
+    &:hover {
+        opacity: 0.8;
+        @include transition;
     }
 }
 

@@ -1,9 +1,9 @@
 .result-details-content {
     padding-top: 7rem;
-    padding-bottom: 6.8rem;
+    padding-bottom: 15.7rem;
     @include sp {
         padding-top: 5.1rem;
-        padding-bottom: 11rem;
+        padding-bottom: 19.6rem;
     }
 }
 
@@ -197,7 +197,7 @@
 .result-details-main__article {
     margin-top: 10rem;
     @include sp {
-        margin-top: 6.1rem;
+        margin-top: 6.3rem;
     }
 }
 
@@ -272,7 +272,7 @@
     }
 
     span {
-        display: inline-block;
+        display: inline;
         @include sp {
             display: none;
         }

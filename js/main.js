@@ -3,7 +3,12 @@
 // ==========================================================================
 $(window).scroll(function() {
     const scrollTop = $(this).scrollTop();
-    const fvHeight = $('#first-view').outerHeight(); // 
+    
+    // #first-viewが存在する場合はその高さを使用、存在しない場合は0を基準値とする
+    let fvHeight = 0; // デフォルト値
+    if ($('#first-view').length > 0) {
+        fvHeight = $('#first-view').outerHeight();
+    }
     
     if (scrollTop > fvHeight) {
         $('header').addClass('scrolled');
