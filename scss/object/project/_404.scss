@@ -28,4 +28,7 @@
         height: 5rem;
         @include text-style(2rem, calc(36/20));
     }
+    &:hover {
+        @include hover-reversecolor;
+    }
 }

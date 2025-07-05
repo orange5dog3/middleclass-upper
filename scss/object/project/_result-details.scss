@@ -231,6 +231,10 @@
     @include sp {
         gap: 2rem;
     }
+    &:hover {
+        @include hover-opacity;
+    }
+
 }
 
 .result-article__card-image {

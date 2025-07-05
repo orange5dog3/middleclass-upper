@@ -2756,6 +2756,10 @@ footer {
     line-height: 1.8;
   }
 }
+.btn-contact-form:hover {
+  color: #CB0000;
+  background-color: #ffffff;
+}
 
 .contact-send-text {
   margin-top: 6.8rem;
@@ -2803,6 +2807,10 @@ footer {
     font-size: 2rem;
     line-height: 1.8;
   }
+}
+.btn-contact-send:hover {
+  color: #CB0000;
+  background-color: #ffffff;
 }
 
 .blog-blog-list__main {
@@ -3014,7 +3022,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 5rem;
-    padding-bottom: 10.8rem;
+    padding-bottom: 19.5rem;
     gap: 3rem;
   }
 }
@@ -3065,6 +3073,7 @@ footer {
     font-size: 2rem;
     line-height: 1.5;
     margin-top: 3rem;
+    margin-right: -0.3rem;
   }
 }
 .blog-details-main__card-text time {
@@ -3203,7 +3212,7 @@ footer {
   .blog-details-main__text-p1 {
     font-size: 1.6rem;
     line-height: 1.875;
-    margin-top: 2.7rem;
+    margin-top: 2.9rem;
   }
 }
 .blog-details-main__text-p1 span {
@@ -4035,10 +4044,14 @@ footer {
     line-height: 1.8;
   }
 }
+.btn-not-found:hover {
+  color: #CB0000;
+  background-color: #ffffff;
+}
 
 .result-list__main {
   padding-top: 7.5rem;
-  padding-bottom: 12rem;
+  padding-bottom: 21rem;
 }
 
 .result-list__view-image {
@@ -4491,6 +4504,9 @@ footer {
   .result__article-items-card {
     gap: 2rem;
   }
+}
+.result__article-items-card:hover {
+  opacity: 0.5;
 }
 
 .result-article__card-image {

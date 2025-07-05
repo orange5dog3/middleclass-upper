@@ -1,0 +1,9 @@
+AuthUserFile /home/orange5dog3/orange-david.com/public_html/middle-class-upper/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Input ID and Password."
+AuthType Basic
+require valid-user
+ErrorDocument 404 /404.html
+<Files ~ "^.(htpasswd|htaccess)$">
+  deny from all
+</Files>
