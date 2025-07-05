@@ -144,6 +144,10 @@
     @include text-style(1.5rem, calc(33/15));
     padding: 0.5rem 3rem!important;
     margin-left: 0.7rem;
+    &:hover {
+        @include hover-reversecolor;
+        border: 0.1rem solid $color-main;
+    }
 }
 
 /* hamburger menu */

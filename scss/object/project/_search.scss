@@ -1,11 +1,17 @@
+.search__main {
+    padding-top: 6.6rem;
+    padding-bottom: 6rem;
+    @include sp {
+        padding-top: 3.6rem;
+        padding-bottom: 5.7rem;
+    }
+}
+
 .search__main-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 6.6rem;
-    @include sp {
-        margin-top: 3.6rem;
-    }
+   
     p {
         @include text-style(1.8rem, calc(30/18));
         font-weight: 500;
@@ -43,10 +49,10 @@
 
 .search__card-image {
     width: 26rem;
-    height: 18.4rem;
+    aspect-ratio: 26/18.4;
     @include sp {
-        width: 33.5rem;
-        height: 20rem;
+        width: 100%;
+        aspect-ratio: 33.5/20;
     }
     picture {
         display: block;

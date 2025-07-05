@@ -100,6 +100,10 @@ a {
     @include sp {
         padding: 1.3rem 9.6rem 0.8rem;
     }
+    &:hover {
+        @include hover-reversecolor;
+        border: 0.1rem solid $color-main;
+    }
 }
 
 // 上部に戻るボタン------------------------------------
@@ -108,11 +112,8 @@ a {
     position: fixed;
     width: 6.8rem;
     height: 6.8rem;
-    // right: 11.5rem;
     z-index: 999;
-    // @include sp {
-    //     right: 2rem;
-    // }
+
     
     a {
         display: block;
