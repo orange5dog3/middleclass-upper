@@ -4,7 +4,7 @@
     display: flex;
     gap: 3rem;
     padding-top: 7rem;
-    padding-bottom: 9.5rem;
+    padding-bottom: 19rem;
     @include sp {
         flex-direction: column;
         padding-top: 5rem;
@@ -460,6 +460,13 @@
             @include text-style(1.7rem, calc(28/17));
             margin-top: 0.8rem;
         }
+
+        span {
+            display: inline;
+            @include sp {
+                display: none;
+            }
+        }
     }
 
     time {
@@ -474,12 +481,7 @@
         }
     }
 
-    span {
-        display: inline-block;
-        @include sp {
-            display: none;
-        }
-    }
+    
 }
 
 .blog-article__card-btn {
@@ -555,10 +557,22 @@
     width: 18rem;
     height: 4rem;
     background-color: $color-band;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-text;
 
     @include sp {
         width: 24.1rem;
         height: 5.4rem;
+        padding: 0 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    &:focus {
+        background-color: rgba($color-band, 0.5);
     }
 }
 
@@ -569,13 +583,20 @@
     align-items: center;
     justify-content: center;
     background-color: $color-text;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
     @include sp {
         width: 5.4rem;
         height: 5.4rem;
     }
 
-    img{
+    &:hover {
+        background-color: rgba($color-text, 0.6);
+    }
+
+    img {
         @include sp {
             width: 2.6rem;
         }

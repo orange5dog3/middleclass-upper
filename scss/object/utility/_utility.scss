@@ -8,7 +8,9 @@
 }
 
 .u-2-pb {
-    padding-bottom: 0.6rem;
+    @include sp {
+        padding-bottom: 0.6rem;
+    }
 }
 
 .u-plan-p {
