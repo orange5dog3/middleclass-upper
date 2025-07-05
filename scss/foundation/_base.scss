@@ -103,13 +103,16 @@ a {
 }
 
 // 上部に戻るボタン------------------------------------
-#upper-arrow {
+.upper-arrow {
     display: none;
     position: fixed;
     width: 6.8rem;
     height: 6.8rem;
-    
+    // right: 11.5rem;
     z-index: 999;
+    // @include sp {
+    //     right: 2rem;
+    // }
     
     a {
         display: block;

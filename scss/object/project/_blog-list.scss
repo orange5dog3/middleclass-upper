@@ -1,9 +1,9 @@
 .blog-blog-list__main {
-    padding-top: 7.2rem;
-    padding-bottom: 12.2rem;
+    padding-top: 7.3rem;
+    padding-bottom: 21rem;
     @include sp {
         padding-top: 5.5rem;
-        padding-bottom: 11.5rem;
+        padding-bottom: 20rem;
     }
 }
 
@@ -63,17 +63,18 @@
         display: block;
         @include text-style(1.7rem, calc(30/17));
         font-weight: 500;
-        margin-top: 1rem;
+        // margin-top: 1rem;
         @include sp {
             text-align: right;
             margin-top: 0.4rem;
         }
     }
     p {
-        @include text-style(1.6rem, calc(30/16));
+        @include text-style(1.8rem, calc(30/18));
         font-weight: 500;
         margin-top: 1.4rem;
         @include sp {
+            @include text-style(1.6rem, calc(30/16));
             margin-top: 0.9rem;
         }
     }
@@ -98,7 +99,7 @@
     margin-top: 7rem;
     @include text-style(1.8rem, calc(30/18));
     @include sp {
-        margin-top: 5.8rem;
+        margin-top: 6rem;
     }
   
     &-list {
