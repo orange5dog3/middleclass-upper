@@ -77,22 +77,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        h2 {
-            @include text-style(2.5rem, calc(60/25));
-            color: $color-white;
-        }
+        @include text-style(2.5rem, calc(60/25));
+        color: $color-white;
     }
 }
 
+// パンクズ
 .c-band {
     width: 100%;
     background-color: $color-band;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
 
     @include sp {
-        padding-top: 1rem;
-        padding-bottom: 0.3rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.6rem;
     }
 
     &-text {
