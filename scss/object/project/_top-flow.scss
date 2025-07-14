@@ -6,11 +6,9 @@
 }
 
 .flow__title {
-    h2 {
-        @include text-style(3rem, calc(50/30));
-        @include sp {
-            @include text-style(2.5rem, calc(40/25));
-        }
+    @include text-style(3rem, calc(50/30));
+    @include sp {
+        @include text-style(2.5rem, calc(40/25));
     }
 }
 

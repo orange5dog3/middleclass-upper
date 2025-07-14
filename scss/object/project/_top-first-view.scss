@@ -10,17 +10,12 @@
     text-align: center;
     color: $color-white;
     z-index: 2;
+    @include text-style(4rem, calc(60/40));
     @include sp {
         top: 51%;
+        @include text-style(3rem, calc(50/30));
+        white-space: nowrap;
     }
-    h2{
-        @include text-style(4rem, calc(60/40));
-        @include sp {
-            @include text-style(3rem, calc(50/30));
-            white-space: nowrap;
-        }
-    }
-    
 }
 
 
