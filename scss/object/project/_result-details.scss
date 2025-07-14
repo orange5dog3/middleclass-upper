@@ -206,13 +206,11 @@
 }
 
 .result__article-title {
-    h2 {
-        @include text-style(1.8rem, calc(33/18));
-        padding: 0.9rem 0 0.8rem 3rem;
-        @include sp {
-            text-align: center;
-            padding:1rem 0;
-        }
+    @include text-style(1.8rem, calc(33/18));
+    padding: 0.9rem 0 0.8rem 3rem;
+    @include sp {
+        text-align: center;
+        padding: 1rem 0;
     }
 }
 

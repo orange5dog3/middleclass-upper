@@ -77,10 +77,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        h2 {
-            @include text-style(2.5rem, calc(60/25));
-            color: $color-white;
-        }
+        @include text-style(2.5rem, calc(60/25));
+        color: $color-white;
     }
 }
 

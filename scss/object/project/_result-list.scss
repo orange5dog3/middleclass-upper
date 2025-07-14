@@ -8,9 +8,7 @@
 }
 
 .result-list__main-title {
-    h2 {
-        @include text-style(2.5rem, 1);
-    }
+    @include text-style(2.5rem, 1);
 }
 
 // テンプレート--------------------------------

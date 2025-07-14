@@ -89,6 +89,16 @@ a {
     z-index: 999;
     @include sp {
         text-align: center;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    // footerに到達した時のスタイル
+    &.footer-reached {
+        position: absolute;
+        bottom: auto;
     }
 }
 
@@ -103,6 +113,7 @@ a {
     &:hover {
         @include hover-reversecolor;
         border: 0.1rem solid $color-main;
+        border-bottom: none;
     }
 }
 
