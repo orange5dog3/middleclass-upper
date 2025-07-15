@@ -218,14 +218,12 @@
     right: 0;
     width: 30rem;
     background: $color-main;
-    // border: 0.1rem solid $color-main;
     transition: transform 0.3s ease;
     z-index: 999;
-    visibility: hidden;
+    transform: translateX(100%);
     
     &.active {
-        visibility: visible;
-
+        transform: translateX(0);
     }
     
     nav {
