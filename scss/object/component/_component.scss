@@ -86,12 +86,14 @@
 .c-band {
     width: 100%;
     background-color: $color-band;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    // padding-top: 1.3rem;
+    // padding-bottom: 1.3rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
 
     @include sp {
-        padding-top: 0.7rem;
-        padding-bottom: 0.6rem;
+        height: 3.6rem;
     }
 
     &-text {
@@ -99,11 +101,31 @@
         line-height: 1.5;
         font-weight: 500;
         color: $color-text;
+        height: inherit;
+        display: flex;
+        align-items: center;
         @include sp {
             line-height: 1.3;
+            white-space: nowrap;
         }
+        
+        a {
+            display: inline-flex;
+            align-items: center;
+            height: inherit;
+        }
+
     }
 
+    .inner {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        width: 94rem;
+        @include sp {
+            overflow-x: scroll;
+        }
+    }
 
 }
 
