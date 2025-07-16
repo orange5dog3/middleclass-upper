@@ -1974,9 +1974,6 @@ footer {
 .question__card-q {
   cursor: pointer;
 }
-.question__card-q:hover {
-  opacity: 0.5;
-}
 
 @media screen and (max-width: 767px) {
   .question__card:last-child .question__card-q {
@@ -2193,7 +2190,6 @@ footer {
   gap: 3rem;
 }
 .plan__price-system-btn span {
-  margin-top: 0.7rem;
   width: 1.85rem;
   height: 0.3rem;
   background-color: #000000;
@@ -2658,7 +2654,8 @@ footer {
 .form__items-tel .form__items-right,
 .form__items-content .form__items-right {
   border: 0.05rem solid #000000;
-  padding-top: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   padding-left: 2rem;
   cursor: pointer;
 }
