@@ -70,3 +70,7 @@ $color-pocket: #DC4F5A;      // pocket
     color: $color-main;
     background-color: $color-white;
 }
+
+@mixin hover-bigger {
+    transform: scale(1.1);
+}

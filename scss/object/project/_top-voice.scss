@@ -31,8 +31,20 @@
     }
     
     &:hover {
-        opacity: 0.8;
         @include transition;
+        .voice__card-image {
+            overflow: hidden;
+            img {
+                @include hover-bigger;
+                @include transition;
+            }
+        }
+        .voice__card-text {
+            h3,p {
+                @include hover-opacity;
+                @include transition;
+            }
+        }
     }
 }
 

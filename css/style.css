@@ -1308,6 +1308,7 @@ footer {
   text-align: center;
   color: #ffffff;
   z-index: 2;
+  white-space: nowrap;
   font-size: 4rem;
   line-height: 1.5;
 }
@@ -1563,7 +1564,7 @@ footer {
 }
 
 .reason__card-image {
-  width: 32.4074074074vw;
+  width: 35rem;
 }
 @media screen and (max-width: 767px) {
   .reason__card-image {
@@ -1696,7 +1697,20 @@ footer {
   }
 }
 .voice__card:hover {
-  opacity: 0.8;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.voice__card:hover .voice__card-image {
+  overflow: hidden;
+}
+.voice__card:hover .voice__card-image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.voice__card:hover .voice__card-text h3, .voice__card:hover .voice__card-text p {
+  opacity: 0.5;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
