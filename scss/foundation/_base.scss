@@ -173,8 +173,14 @@ a {
     z-index: 999;
     cursor: pointer;
     @include transition;
+
     @include sp {
         top: 41%;
+    }
+    &:hover {
+        @include transition;
+        cursor: pointer;
+        transform: translateY(-50%) scale(1.3);
     }
 }
 

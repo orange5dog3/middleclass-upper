@@ -32,7 +32,7 @@
 }
 
 .reason__card-image {
-    width: calc(350 / 1080 * 100vw);
+    width: 35rem;
     @include sp {
         width: 100%;
     }

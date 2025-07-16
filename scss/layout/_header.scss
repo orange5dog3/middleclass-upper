@@ -4,16 +4,14 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    &.scrolled {
-        background-color: $color-white;
-    }
+    background-color: $color-white;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem 10rem 0 10rem;
+    padding-inline: 10rem;
     max-width: 108rem;
     height: 8rem;
     margin: 0 auto;
@@ -29,16 +27,14 @@
     height: inherit;
     display: flex;
     align-items: center;
-    h1{
+    @include text-style(2rem, calc(23/20));
+   
+    @include sp {
+        @include text-style(1.3rem, calc(14/13));
+    }
+    
+    a {
         height: inherit;
-        @include text-style(2rem, calc(23/20));
-       
-        @include sp {
-            @include text-style(1.3rem, calc(14/13));
-        }
-        a {
-            height: inherit;
-        }
     }
     
     span {
@@ -86,9 +82,7 @@
     }
 }
 
-.header__title-text {
-    display: block;
-}
+
 
 
 .header__nav {
@@ -119,6 +113,7 @@
         height: inherit;
         display: flex;
         align-items: center;
+        position: relative;
         
         a {
             padding-inline: 1rem;
@@ -129,8 +124,26 @@
                 @include hover-opacity;
             }
         }
+
+        span {
+            display: block;
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+            width: 100%;
+            height: 0.2rem;
+            background-color: $color-text;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        &:hover span {
+            opacity: 1;
+        }
     }
 }
+
+
 
 .header__nav-link {
     @include text-style(1.7rem, calc(33/17));
@@ -139,14 +152,17 @@
     align-items: center;
 }
 
+.header__nav ul li:nth-of-type(3) {
+    margin-right: 0.7rem;
+}
 
 .btn-header {
     @include text-style(1.5rem, calc(33/15));
     padding: 0.5rem 3rem!important;
-    margin-left: 0.7rem;
     &:hover {
         @include hover-reversecolor;
         border: 0.1rem solid $color-main;
+        opacity: 1 !important;
     }
 }
 
@@ -160,6 +176,7 @@
     height: 5rem;
     background: $color-main;
     border: 0.1rem solid $color-main;
+    cursor: pointer;
 
     /* active状態 */
     &.active {
@@ -217,32 +234,33 @@
     right: 0;
     width: 30rem;
     background: $color-main;
-    border: 0.1rem solid $color-main;
     transition: transform 0.3s ease;
     z-index: 999;
-    visibility: hidden;
+    transform: translateX(100%);
     
     &.active {
-        visibility: visible;
-
+        transform: translateX(0);
     }
     
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        margin: 0;
+    nav {
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin: 0;
         
-        li {
-            a {
-                display: block;
-                padding: 1.5rem 0 1rem 2rem;
-                @include text-style(1.8rem, calc(33/18));
-                text-decoration: none;
-                color: $color-white;
-                
-                &:hover {
-                    background-color: $color-black;
+            li {
+                a {
+                    display: block;
+                    padding: 1.5rem 0 1rem 2rem;
+                    @include text-style(1.8rem, calc(33/18));
+                    text-decoration: none;
+                    color: $color-white;
+                    
+                    &:hover {
+                        background-color: $color-black;
+                    }
                 }
             }
         }
@@ -260,9 +278,10 @@
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 998;
-    
+    pointer-events: none;
+
     &.active {
-        visibility: visible;
+        pointer-events: auto;
     }
 }
 

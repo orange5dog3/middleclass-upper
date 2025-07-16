@@ -46,10 +46,6 @@
 
 .question__card-q {
     cursor: pointer;
-    
-    &:hover {
-        @include hover-opacity;
-    }
 }
 
 // 最後のqのみpaddingを調整
