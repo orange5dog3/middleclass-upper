@@ -723,19 +723,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.header__title h1 {
-  height: inherit;
   font-size: 2rem;
   line-height: 1.15;
 }
 @media screen and (max-width: 767px) {
-  .header__title h1 {
+  .header__title {
     font-size: 1.3rem;
     line-height: 1.0769230769;
   }
 }
-.header__title h1 a {
+.header__title a {
   height: inherit;
 }
 .header__title span {
@@ -789,10 +786,6 @@ a {
     height: 3.1rem;
     background-size: contain;
   }
-}
-
-.header__title-text {
-  display: block;
 }
 
 .header__nav {

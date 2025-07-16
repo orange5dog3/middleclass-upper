@@ -27,16 +27,14 @@
     height: inherit;
     display: flex;
     align-items: center;
-    h1{
+    @include text-style(2rem, calc(23/20));
+   
+    @include sp {
+        @include text-style(1.3rem, calc(14/13));
+    }
+    
+    a {
         height: inherit;
-        @include text-style(2rem, calc(23/20));
-       
-        @include sp {
-            @include text-style(1.3rem, calc(14/13));
-        }
-        a {
-            height: inherit;
-        }
     }
     
     span {
@@ -84,9 +82,7 @@
     }
 }
 
-.header__title-text {
-    display: block;
-}
+
 
 
 .header__nav {
