@@ -25,7 +25,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgba(80, 80, 80, 0.5);
     
     &::before {  
         content: "";
@@ -34,7 +33,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(80, 80, 80, 0.5);  // 半透明グレー
+        background: rgba(80, 80, 80, 0.5);  
+        mix-blend-mode: multiply;  
         z-index: 1;
     }
 
