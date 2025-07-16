@@ -117,6 +117,7 @@
         height: inherit;
         display: flex;
         align-items: center;
+        position: relative;
         
         a {
             padding-inline: 1rem;
@@ -127,8 +128,26 @@
                 @include hover-opacity;
             }
         }
+
+        span {
+            display: block;
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+            width: 100%;
+            height: 0.2rem;
+            background-color: $color-text;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        &:hover span {
+            opacity: 1;
+        }
     }
 }
+
+
 
 .header__nav-link {
     @include text-style(1.7rem, calc(33/17));
@@ -161,6 +180,7 @@
     height: 5rem;
     background: $color-main;
     border: 0.1rem solid $color-main;
+    cursor: pointer;
 
     /* active状態 */
     &.active {
@@ -262,9 +282,10 @@
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 998;
-    
+    pointer-events: none;
+
     &.active {
-        visibility: visible;
+        pointer-events: auto;
     }
 }
 
