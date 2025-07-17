@@ -90,9 +90,12 @@
 // btn
 .blog-blog__card-btn {
     @include text-style(1.5rem, calc(25/15));
-    width: 8rem;
+    min-width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3rem;
-    padding-top: 0.2rem;
+    padding-inline: 0.5rem;
     @include sp {
         width: 9rem;
     }
