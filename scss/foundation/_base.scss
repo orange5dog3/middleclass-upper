@@ -33,6 +33,11 @@ h1,h2,h3,h4,label,input,a,ul,li {
     }
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 .inner {
     max-width: 94rem;
     padding-inline: 3rem;
@@ -185,10 +190,10 @@ a {
 }
 
 .slick-prev {
-    left: -4rem;
+    left: -5.5rem;
 
     @include pc-768-1000 {
-        left: -1.5rem;
+        left: -5.5rem;
     }
     
     @include sp {
@@ -197,10 +202,10 @@ a {
 }
 
 .slick-next {
-    right: -4rem;
+    right: -5.5rem;
 
     @include pc-768-1000 {
-        right: -1.5rem;
+        right: -5.5rem;
     }
     
     @include sp {

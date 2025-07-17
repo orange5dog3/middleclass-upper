@@ -5,6 +5,20 @@
     }
 }
 
+.voice-inner {
+    max-width: 98rem;
+    padding-inline: 5rem;
+    margin: 0 auto;
+
+    @include pc-768-1000 {
+        padding-inline: 5rem;
+    }
+
+    @include sp {
+        padding-inline: 2rem;
+    }
+}
+
 .voice__title {
     @include text-style(3rem, calc(50/30));
     @include sp {
@@ -50,7 +64,6 @@
 
 .voice__card-image {
     img {
-        width: 100%;
         object-fit: cover;
     }
 }
