@@ -73,13 +73,14 @@ $(".js-question-trigger").click(function(){
     $item.toggleClass("is-open");
   
     if ($item.hasClass("is-open")) {
-      $answer
-        .stop(true, true)
-        .slideDown(300);
+        $answer
+          .css("display", "flex")
+          .hide()
+          .slideDown(300);
     } else {
-      $answer
-        .stop(true, true)
-        .slideUp(300);
+        $answer.slideUp(300, function() {
+          $(this).css("display", "none");
+        });
     }
   });
 
