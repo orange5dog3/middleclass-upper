@@ -64,13 +64,24 @@ $(".hamburger-trigger").click(
 // ==========================================================================
 // top-question accordion
 // ==========================================================================
-const questionTriggers = document.querySelectorAll('.js-question-trigger');
-questionTriggers.forEach(trigger => {
-    trigger.addEventListener('click', () => {
-        const item = trigger.closest('.question__box-item');
-        item.classList.toggle('is-open');
-    });
-});
+
+
+$(".js-question-trigger").click(function(){
+    var $item = $(this).closest(".question__box-item");
+    var $answer = $item.find(".question__card-a");
+  
+    $item.toggleClass("is-open");
+  
+    if ($item.hasClass("is-open")) {
+      $answer
+        .stop(true, true)
+        .slideDown(300);
+    } else {
+      $answer
+        .stop(true, true)
+        .slideUp(300);
+    }
+  });
 
 // ==========================================================================
 // upper-arrow1 scroll control
@@ -272,3 +283,19 @@ $(document).ready(function() {
 });
 
 })(jQuery);
+
+
+// ==========================================================================
+// slick resize event
+// ==========================================================================
+
+$(".voice-slider").slick('setPosition');
+$(window).trigger('resize');
+
+// $(window).on('resize', function() {
+//     console.log('resize event fired');
+// });
+
+// $('.voice-slider').on('setPosition', function(event, slick){
+//     console.log('slick setPosition fired');
+// });

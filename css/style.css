@@ -415,6 +415,11 @@ h1, h2, h3, h4, label, input, a, ul, li {
   }
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .inner {
   max-width: 94rem;
   padding-inline: 3rem;
@@ -561,11 +566,11 @@ a {
 }
 
 .slick-prev {
-  left: -4rem;
+  left: -5.5rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .slick-prev {
-    left: -1.5rem;
+    left: -5.5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -575,11 +580,11 @@ a {
 }
 
 .slick-next {
-  right: -4rem;
+  right: -5.5rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .slick-next {
-    right: -1.5rem;
+    right: -5.5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1667,6 +1672,22 @@ footer {
   }
 }
 
+.voice-inner {
+  max-width: 98rem;
+  padding-inline: 5rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .voice-inner {
+    padding-inline: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .voice-inner {
+    padding-inline: 2rem;
+  }
+}
+
 .voice__title {
   font-size: 3rem;
   line-height: 1.6666666667;
@@ -1725,7 +1746,6 @@ footer {
 }
 
 .voice__card-image img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1988,9 +2008,7 @@ footer {
 }
 
 .question__card.is-open .question__card-a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  overflow: hidden;
 }
 
 .question__card-text {
