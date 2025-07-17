@@ -96,9 +96,13 @@
     grid-template-columns:repeat(4, 1fr);
     width: 100%;
     margin-top: 5.5rem;
+    
     @include sp {
-        grid-template-columns: repeat(4, 16.75rem);
         margin-top: 0.8rem;
+    }
+
+    @include sp-710 {
+        grid-template-columns: repeat(4, 16.75rem);
     }
 }
   

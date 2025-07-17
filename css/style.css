@@ -2323,8 +2323,12 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .plan__plan-table {
-    grid-template-columns: repeat(4, 16.75rem);
     margin-top: 0.8rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  .plan__plan-table {
+    grid-template-columns: repeat(4, 16.75rem);
   }
 }
 
