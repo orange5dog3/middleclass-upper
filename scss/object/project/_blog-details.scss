@@ -94,7 +94,7 @@
 }
 
 
-.blog__sns-icon {
+.blog__sns-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,6 +312,10 @@
         @include text-style(2rem, calc(33/20));
         line-height: 1;
         display: inline-block;
+        @include transition;
+        &:hover {
+            @include hover-opacity;
+        }
 
         &::after {
             content: "";
@@ -448,24 +452,32 @@
         height: 26.8rem;
     }
 
-    span {
-        display: block;
-        width: 22rem;
-        height: 17rem;
-        background-color: $color-band;
-
-        @include sp {
-            width: 29.5rem;
-            height: 22.8rem;
-        }
-    }
-
     p {
         @include text-style(1.8rem, calc(33/18));
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 2;
+        pointer-events: none;
+        @include transition;
+    }
+}
+
+// バナーリンク（クリック可能領域）
+.blog-details-side__banner-link {
+    width: 22rem;
+    height: 17rem;
+    background-color: $color-band;
+    @include transition;
+
+    @include sp {
+        width: 29.5rem;
+        height: 22.8rem;
+    }
+
+    &:hover {
+        background-color: rgba($color-band, 0.8);
     }
 }
 
@@ -532,6 +544,7 @@
     }
 
     img {
+        width: auto;
         @include sp {
             width: 2.6rem;
         }
@@ -558,6 +571,12 @@
 .blog-details-side__recommend__box-item {
     display: flex;
     gap: 1.5rem;
+    @include transition;
+
+    &:hover {
+        @include hover-opacity;
+    }
+
     @include sp {
         gap: 2rem;
     }
@@ -594,6 +613,14 @@
 }
 
 .blog-details-side__category__box-item {
+    @include transition;
+
+    &:hover {
+        .category-item__text {
+          @include hover-opacity;
+        }
+    }
+
     p {
         @include text-style(1.7rem, calc(28/17));
         font-weight: 500;
