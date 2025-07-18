@@ -1384,6 +1384,68 @@ footer {
   text-align: right;
 }
 
+.c-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+.c-pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .c-pagination-list {
+    gap: 0.5rem;
+  }
+}
+.c-pagination-item a {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border: 1px solid #000000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .c-pagination-item a {
+    width: 4.4rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+  }
+}
+.c-pagination-item a:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 1 !important;
+}
+.c-pagination-item.is-current a {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+.c-pagination-dots {
+  padding-inline: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .c-pagination-dots {
+    padding-inline: 0.6rem;
+  }
+}
+
 .top__first-view {
   position: relative;
 }
@@ -3126,71 +3188,12 @@ footer {
   }
 }
 
-.blog-blog__pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.blog-blog-list__pagination {
   margin-top: 7rem;
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
 }
 @media screen and (max-width: 767px) {
-  .blog-blog__pagination {
+  .blog-blog-list__pagination {
     margin-top: 6rem;
-  }
-}
-.blog-blog__pagination-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .blog-blog__pagination-list {
-    gap: 0.5rem;
-  }
-}
-.blog-blog__pagination-item a {
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  line-height: 5rem;
-  text-align: center;
-  border: 1px solid #000000;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-@media screen and (max-width: 767px) {
-  .blog-blog__pagination-item a {
-    width: 4.4rem;
-    height: 4.4rem;
-    line-height: 4.4rem;
-  }
-}
-.blog-blog__pagination-item a:hover {
-  background-color: #000000;
-  color: #ffffff;
-  opacity: 1 !important;
-}
-.blog-blog__pagination-item.is-current a {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #000000;
-}
-.blog-blog__pagination-dots {
-  padding-inline: 1rem;
-}
-@media screen and (max-width: 767px) {
-  .blog-blog__pagination-dots {
-    padding-inline: 0.6rem;
   }
 }
 
@@ -4281,70 +4284,11 @@ footer {
 }
 
 .result-list__pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 7.5rem;
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
 }
 @media screen and (max-width: 767px) {
   .result-list__pagination {
     margin-top: 5.8rem;
-  }
-}
-.result-list__pagination-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .result-list__pagination-list {
-    gap: 0.5rem;
-  }
-}
-.result-list__pagination-item a {
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  line-height: 5rem;
-  text-align: center;
-  border: 1px solid #000000;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-@media screen and (max-width: 767px) {
-  .result-list__pagination-item a {
-    width: 4.4rem;
-    height: 4.4rem;
-    line-height: 4.4rem;
-  }
-}
-.result-list__pagination-item a:hover {
-  background-color: #000000;
-  color: #ffffff;
-  opacity: 1 !important;
-}
-.result-list__pagination-item.is-current a {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #000000;
-}
-.result-list__pagination-dots {
-  padding-inline: 1rem;
-}
-@media screen and (max-width: 767px) {
-  .result-list__pagination-dots {
-    padding-inline: 0.6rem;
   }
 }
 
