@@ -41,9 +41,14 @@
 .search__items-card {
     display: flex;
     gap: 5rem;
+   
+    @include transition;
     @include sp {
         flex-direction: column;
         gap: 0;
+    }
+    &:hover {
+        @include hover-opacity;
     }
 }
 
