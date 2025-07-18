@@ -167,3 +167,75 @@
         @include text-style(1.8rem, calc(33/18));
     }
 }
+
+// before&after
+.c-main__article-before-after{
+    display: flex;
+    gap: 8rem;
+    @include sp {
+        margin-top: 5rem;
+        gap: 2.2rem;
+    }
+}
+
+.c-before-after__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    a:hover {
+        @include hover-opacity;
+    }
+}
+
+.c-before-after__title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+    p{
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+    }
+}
+
+.c-before-after__item {
+    display: flex;
+    gap: 1.6rem;
+
+    &-image {
+        width: 9.8rem;
+        aspect-ratio: 9.8 / 6.8;
+
+        picture {
+            display: block;
+        }
+
+        img {
+        height: 100%;
+
+            object-fit: cover;
+        }
+    }
+
+    &-text {
+        flex: 1;
+        p {
+            @include text-style(1.6rem, calc(25/16));
+        }
+    }
+}
+
+// before
+.c-before-content {
+    p{
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+// after
+.c-after-content {
+    p{
+        padding-right: 2rem;
+        text-align: right;
+    }
+}
