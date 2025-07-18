@@ -30,23 +30,21 @@ footer {
 
 .footer__logo {
     margin: 0 auto;
-    margin-top: 1.3rem;
-    width: 3.2rem;
+    margin-top: 0.8rem;
+    width: 4.2rem;
+    display: inline-block;
+    padding: 0.5rem;
     @include sp {
-        margin-top: 1.2rem;
-    }
-
-    img {
-        width: 100%;
+        margin-top: 0.7rem;
     }
 }
 
 .footer__copyright {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     @include text-style(1.5rem, calc(33/15));
     font-weight: 500;
     @include sp {
-        margin-top: 2.7rem;
+        margin-top: 2.2rem;
         @include text-style(1.5rem, calc(20/15));
     }
 }
@@ -68,7 +66,8 @@ footer {
     gap: 0.2rem;
 
     a {
-        padding: 0 0.5rem 0.5rem;
+        padding:0.5rem;
+        margin-top: -0.5rem;
         
         &:hover {
             @include hover-opacity;
