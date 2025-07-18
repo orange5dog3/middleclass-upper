@@ -2110,7 +2110,8 @@ footer {
 @media screen and (max-width: 767px) {
   .question__card-q,
   .question__card-a {
-    padding: 1.7rem 1.5rem 0.9rem 0;
+    padding: 1.3rem 1.5rem 1.3rem 1rem;
+    gap: 2.5rem;
   }
 }
 .question__card-q p,
@@ -2129,6 +2130,21 @@ footer {
 
 .question__card-q {
   cursor: pointer;
+}
+
+.question__arrow {
+  width: 1.3rem;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  margin-left: auto;
+}
+
+.question__card.is-open .question__arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .question__card-a {
@@ -2177,21 +2193,6 @@ footer {
 
 .question__a-icon::after {
   background-color: #CB0000;
-}
-
-.question__arrow {
-  width: 1.3rem;
-  height: auto;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  margin-left: auto;
-}
-
-.question__card.is-open .question__arrow {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .top__blog {
