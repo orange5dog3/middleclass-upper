@@ -94,7 +94,7 @@
 }
 
 
-.blog__sns-icon {
+.blog__sns-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,6 +312,10 @@
         @include text-style(2rem, calc(33/20));
         line-height: 1;
         display: inline-block;
+        @include transition;
+        &:hover {
+            @include hover-opacity;
+        }
 
         &::after {
             content: "";
@@ -325,79 +329,8 @@
 }
 
 // article-before&after--------------------------------
-.blog-details-main__article-before-after{
-    display: flex;
+.blog-before-after {
     margin-top: 5.7rem;
-    gap: 8rem;
-    @include sp {
-        margin-top: 5rem;
-        gap: 2.2rem;
-    }
-}
-
-// 共通項目
-.blog-before-after__content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-
-    a:hover {
-        @include hover-opacity;
-    }
-
-}
-
-.blog-before-after__item {
-    display: flex;
-    gap: 1.6rem;
-}
-
-.blog-before-after__title {
-    padding-top: 0.4rem;
-    padding-bottom: 0.3rem;
-    p{
-        @include text-style(1.7rem, calc(30/17));
-        font-weight: 500;
-    }
-
-}
-
-.blog-before-after__item-image {
-    width: 9.8rem;
-    aspect-ratio: 9.8 / 6.8;
-
-    picture {
-        display: block;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.blog-before-after__item-text {
-    flex: 1;
-    p {
-        @include text-style(1.6rem, calc(25/16));
-    }
-}
-
-// before
-.blog-before-content {
-    p{
-        padding-left: 2rem;
-        text-align: left;
-    }
-}
-
-// after
-.blog-after-content {
-    p{
-        padding-right: 2rem;
-        text-align: right;
-    }
 }
 
 // article--------------------------------
@@ -519,24 +452,32 @@
         height: 26.8rem;
     }
 
-    span {
-        display: block;
-        width: 22rem;
-        height: 17rem;
-        background-color: $color-band;
-
-        @include sp {
-            width: 29.5rem;
-            height: 22.8rem;
-        }
-    }
-
     p {
         @include text-style(1.8rem, calc(33/18));
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 2;
+        pointer-events: none;
+        @include transition;
+    }
+}
+
+// バナーリンク（クリック可能領域）
+.blog-details-side__banner-link {
+    width: 22rem;
+    height: 17rem;
+    background-color: $color-band;
+    @include transition;
+
+    @include sp {
+        width: 29.5rem;
+        height: 22.8rem;
+    }
+
+    &:hover {
+        background-color: rgba($color-band, 0.8);
     }
 }
 
@@ -603,6 +544,7 @@
     }
 
     img {
+        width: auto;
         @include sp {
             width: 2.6rem;
         }
@@ -629,6 +571,12 @@
 .blog-details-side__recommend__box-item {
     display: flex;
     gap: 1.5rem;
+    @include transition;
+
+    &:hover {
+        @include hover-opacity;
+    }
+
     @include sp {
         gap: 2rem;
     }
@@ -665,6 +613,14 @@
 }
 
 .blog-details-side__category__box-item {
+    @include transition;
+
+    &:hover {
+        .category-item__text {
+          @include hover-opacity;
+        }
+    }
+
     p {
         @include text-style(1.7rem, calc(28/17));
         font-weight: 500;

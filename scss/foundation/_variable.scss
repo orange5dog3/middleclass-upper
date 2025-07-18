@@ -55,6 +55,11 @@ $color-pocket: #DC4F5A;      // pocket
     }
 }
 
+@mixin sp-710 {
+    @media screen and (max-width: 710px) {
+        @content;
+    }
+}
 
 // トランジション
 // -------------------------
