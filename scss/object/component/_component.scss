@@ -171,11 +171,6 @@
 // before&after
 .c-main__article-before-after{
     display: flex;
-    gap: 8rem;
-    @include sp {
-        margin-top: 5rem;
-        gap: 2.2rem;
-    }
 }
 
 .c-before-after__content {
@@ -183,8 +178,9 @@
     flex-direction: column;
     gap: 1.6rem;
     flex: 1;
+    @include transition;
 
-    a:hover {
+    &:hover {
         @include hover-opacity;
     }
 }
@@ -226,6 +222,9 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            @include sp {
+                -webkit-line-clamp: 3;
+            }
         }
     }
 }

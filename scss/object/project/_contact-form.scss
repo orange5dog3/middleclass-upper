@@ -205,7 +205,7 @@
             min-height: 29rem;
             resize: vertical;
             @include sp {
-                height: 17.7rem;
+                min-height: 17.7rem;
             }
             
             &::placeholder {

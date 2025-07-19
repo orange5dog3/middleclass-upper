@@ -136,13 +136,18 @@
 // article-before&after--------------------------------
 .result-before-after {
     margin-top: 6rem;
+    gap: 20rem;
+    @include sp {
+        margin-top: 4.4rem;
+        gap: 2.2rem;
+    }
 }
 
 // article--------------------------------
 .result-details-main__article {
     margin-top: 10rem;
     @include sp {
-        margin-top: 6.3rem;
+        margin-top: 6rem;
     }
 }
 

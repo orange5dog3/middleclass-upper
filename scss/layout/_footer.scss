@@ -45,7 +45,7 @@ footer {
     @include text-style(1.5rem, calc(33/15));
     font-weight: 500;
     @include sp {
-        margin-top: 2.2rem;
+        margin-top: 2.0rem;
         @include text-style(1.5rem, calc(20/15));
     }
 }
@@ -57,7 +57,7 @@ footer {
         gap: 2.5rem;
     }
     @include sp {
-        margin-top: 1.7rem;
+        margin-top: 1.5rem;
     }
 }
 

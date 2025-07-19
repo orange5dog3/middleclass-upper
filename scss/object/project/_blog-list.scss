@@ -68,13 +68,13 @@
         @include sp {
             @include text-style(2rem, calc(30/20));
             margin-top: 3.1rem;
+            -webkit-line-clamp: 2;
         }
     }
     time {
         display: block;
         @include text-style(1.7rem, calc(30/17));
         font-weight: 500;
-        // margin-top: 1rem;
         @include sp {
             text-align: right;
             margin-top: 0.4rem;
@@ -92,6 +92,7 @@
         @include sp {
             @include text-style(1.6rem, calc(30/16));
             margin-top: 0.9rem;
+            -webkit-line-clamp: 5;
         }
     }
 }
