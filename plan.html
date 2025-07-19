@@ -85,47 +85,141 @@
                         <div class="plan__main-plan plan__plan">
                             <h2 class="c-text-center">プラン内容・月額料金</h2>
                             <!-- table -->
-                            <div class="plan__table-scroll">
-                                <div class="plan__plan-table plan__table">
-                                
-                                    <!-- 1行目：ヘッダー -->
+                            <div class="plan__table-scroll ">
+                                <!-- ヘッダー-->
+                                <div class="plan__table-header-grid">
                                     <div class="plan__table-cell plan__table-empty"></div>
-                                    <div class="plan__table-cell plan__table-header c-bg-black plan__table-normal"><h4>ベーシック<br class="pc_none">プラン</h4></div>
-                                    <div class="plan__table-cell plan__table-header c-bg-red plan__table-recommend"><h4><span>おすすめ</span><br>スタンダード<br class="pc_none">プラン</h4></div>
-                                    <div class="plan__table-cell plan__table-header c-bg-black plan__table-normal"><h4>プレミアム<br class="pc_none">プラン</h4></div>
-                                
-                                    <!-- 2行目：月額料金 -->
-                                    <div class="plan__table-cell plan__table-title"><h5>月額料金</h5></div>
-                                    <div class="plan__table-cell plan__table-price"><h3>39,000円</h3></div>
-                                    <div class="plan__table-cell plan__table-price"><h3 class="c-font-red">59,000円</h3></div>
-                                    <div class="plan__table-cell plan__table-price"><h3>128,000円</h3></div>
-                                
-                                    <!-- 以下、サービス行 -->
-                                    <div class="plan__table-cell plan__table-title bg-plan-gray"><h6>マンツーマン授業</h6></div>
-                                    <div class="plan__table-cell plan__table-ball-flex bg-plan-gray u-plan-p"><span class="plan__table-ball plan__table-ball-black"></span><br><p>週1回</p></div>
-                                    <div class="plan__table-cell plan__table-ball-flex bg-plan-gray u-plan-p"><span class="plan__table-ball plan__table-ball-red"></span><br><p>週2回</p></div>
-                                    <div class="plan__table-cell plan__table-ball-flex bg-plan-gray u-plan-p"><span class="plan__table-ball plan__table-ball-black"></span><br><p>無制限</p></div>
-                                
-                                    <div class="plan__table-cell plan__table-title"><h6>ビジネス基本講座</h6></div>
-                                    <div class="plan__table-cell"><span class="plan__table-ball plan__table-ball-black"></span></div>
-                                    <div class="plan__table-cell"><span class="plan__table-ball plan__table-ball-red"></span></div>
-                                    <div class="plan__table-cell"><span class="plan__table-ball plan__table-ball-black"></span></div>
-                                
-                                    <div class="plan__table-cell plan__table-title bg-plan-gray"><h6>練習ROOM利用</h6></div>
-                                    <div class="plan__table-cell plan__table-ball-flex bg-plan-gray u-plan-p"><span class="plan__table-ball plan__table-ball-black"></span><br><p>月10時間</p></div>
-                                    <div class="plan__table-cell plan__table-ball-flex bg-plan-gray u-plan-p"><span class="plan__table-ball plan__table-ball-red"></span><br><p>月20時間</p></div>
-                                    <div class="plan__table-cell plan__table-ball-flex bg-plan-gray u-plan-p"><span class="plan__table-ball plan__table-ball-black"></span><br><p>無制限</p></div>
-                                
-                                    <div class="plan__table-cell plan__table-title"><h6>ビジネスコンサル</h6></div>
-                                    <div class="plan__table-cell plan__table-border"><span></span></div>
-                                    <div class="plan__table-cell plan__table-ball-flex u-plan-p"><span class="plan__table-ball plan__table-ball-red"></span><br><p>月2回</p></div>
-                                    <div class="plan__table-cell plan__table-ball-flex u-plan-p"><span class="plan__table-ball plan__table-ball-black"></span><br><p>月3回</p></div>
-                                
-                                    <div class="plan__table-cell plan__table-title bg-plan-gray"><h6>コミュニティ<br class="pc_none">参加資格</h6></div>
-                                    <div class="plan__table-cell bg-plan-gray plan__table-border"><span></span></div>
-                                    <div class="plan__table-cell bg-plan-gray plan__table-border"><span></span></div>
-                                    <div class="plan__table-cell bg-plan-gray"><span class="plan__table-ball plan__table-ball-black"></span></div>
+                                    <div class="plan__table-cell plan__table-header c-bg-black plan__table-normal">
+                                        <h4>ベーシック<br class="pc_none">プラン</h4>
+                                    </div>
+                                    <div class="plan__table-cell plan__table-header c-bg-red plan__table-recommend">
+                                        <h4><span>おすすめ</span><br>スタンダード<br class="pc_none">プラン</h4>
+                                    </div>
+                                    <div class="plan__table-cell plan__table-header c-bg-black plan__table-normal">
+                                        <h4>プレミアム<br class="pc_none">プラン</h4>
+                                    </div>
                                 </div>
+
+                                <!-- ボディ-->
+                                <table class="plan__plan-table-body">
+                                    <tbody>
+                                        <!-- 月額料金行 -->
+                                        <tr class="plan__table-body">
+                                            <th class="plan__table-title"><h5>月額料金</h5></th>
+                                            <td class="plan__table-price"><h3>39,000円</h3></td>
+                                            <td class="plan__table-price"><h3 class="c-font-red">59,000円</h3></td>
+                                            <td class="plan__table-price"><h3>128,000円</h3></td>
+                                        </tr>
+                                        
+                                        <!-- マンツーマン授業行 -->
+                                        <tr class="bg-plan-gray">
+                                            <th class="plan__table-title bg-plan-gray"><h6>マンツーマン授業</h6></th>
+                                            <td class="bg-plan-gray u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                    <p>週1回</p>
+                                                </div>
+                                            </td>
+                                            <td class="bg-plan-gray u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-red"></span>
+                                                    <p>週2回</p>
+                                                </div>
+                                            </td>
+                                            <td class="bg-plan-gray u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                    <p>無制限</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- ビジネス基本講座行 -->
+                                        <tr>
+                                            <th class="plan__table-title"><h6>ビジネス基本講座</h6></th>
+                                            <td>
+                                                <div class="plan__table-ball-center">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="plan__table-ball-center">
+                                                    <span class="plan__table-ball plan__table-ball-red"></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="plan__table-ball-center">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- 練習ROOM利用行 -->
+                                        <tr class="bg-plan-gray">
+                                            <th class="plan__table-title bg-plan-gray"><h6>練習ROOM利用</h6></th>
+                                            <td class="bg-plan-gray u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                    <p>月10時間</p>
+                                                </div>
+                                            </td>
+                                            <td class="bg-plan-gray u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-red"></span>
+                                                    <p>月20時間</p>
+                                                </div>
+                                            </td>
+                                            <td class="bg-plan-gray u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                    <p>無制限</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- ビジネスコンサル行 -->
+                                        <tr>
+                                            <th class="plan__table-title"><h6>ビジネスコンサル</h6></th>
+                                            <td>
+                                                <div class="plan__table-border">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td class="u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-red"></span>
+                                                    <p>月2回</p>
+                                                </div>
+                                            </td>
+                                            <td class="u-plan-p">
+                                                <div class="plan__table-ball-flex">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                    <p>月3回</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- コミュニティ参加資格行 -->
+                                        <tr class="bg-plan-gray">
+                                            <th class="plan__table-title bg-plan-gray"><h6>コミュニティ<br class="pc_none">参加資格</h6></th>
+                                            <td class="bg-plan-gray">
+                                                <div class="plan__table-border">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td class="bg-plan-gray">
+                                                <div class="plan__table-border">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td class="bg-plan-gray">
+                                                <div class="plan__table-ball-center">
+                                                    <span class="plan__table-ball plan__table-ball-black"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <div class="plan__plan-plz-contact">
