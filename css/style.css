@@ -2546,18 +2546,23 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .plan__table-header-grid {
-    margin-top: 0.8rem;
+    margin-top: 1.3rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  .plan__table-header-grid {
     grid-template-columns: repeat(4, 16.75rem);
   }
 }
 
 .plan__table-recommend {
   height: 8rem;
-  padding: 1rem 0.5rem 0.3rem 0.5rem;
+  padding: 0.65rem 0.5rem 0.65rem 0.5rem;
+  border: none;
 }
 @media screen and (max-width: 767px) {
   .plan__table-recommend {
-    height: 8.5rem;
+    height: 9rem;
     padding: 0.7rem 0.5rem 0.5rem 0.5rem;
   }
 }
@@ -2569,10 +2574,11 @@ footer {
 .plan__table-normal {
   height: 5rem;
   padding: 1.1rem 0.5rem 0.5rem 0.5rem;
+  border: none;
 }
 @media screen and (max-width: 767px) {
   .plan__table-normal {
-    height: 7.5rem;
+    height: 6.6rem;
     padding: 1rem 0.5rem 0.7rem 0.5rem;
   }
 }
@@ -2606,6 +2612,11 @@ footer {
 .plan__table-title {
   text-align: left !important;
   padding-left: 2rem !important;
+}
+@media screen and (max-width: 767px) {
+  .plan__table-title {
+    padding-left: 1rem !important;
+  }
 }
 
 .plan__table-title {
@@ -2685,22 +2696,6 @@ footer {
 
 .plan__table-ball-black {
   background-color: #000000;
-}
-
-.plan__table-header-grid .plan__table-cell:nth-child(1) {
-  border-left: none;
-  border-top: none;
-}
-.plan__table-header-grid .plan__table-cell:nth-child(4) {
-  border-right: none;
-}
-.plan__table-header-grid .plan__table-cell:nth-child(2),
-.plan__table-header-grid .plan__table-cell:nth-child(3),
-.plan__table-header-grid .plan__table-cell:nth-child(4) {
-  border-top: none;
-}
-.plan__table-header-grid .plan__table-cell {
-  border-bottom: 0.5px solid #000000;
 }
 
 .plan__plan-table-body th:first-child,
