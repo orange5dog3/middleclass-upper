@@ -8,14 +8,14 @@
 }
 
 .u-plan-p {
-    padding-top: 0.8rem;
-    padding-bottom: 0.5rem;
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem;
 
     @include sp {
-        padding-top: 1em;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
     }
 
     p {
-    line-height: 1;
+        line-height: 1;
+        margin: 0;
     }
 }

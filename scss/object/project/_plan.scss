@@ -88,36 +88,6 @@
             @include text-style(2.5rem, calc(40/25));
         }
     }
-}
-
-// table枠組み
-.plan__plan-table {
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    width: 100%;
-    margin-top: 5.5rem;
-    
-    @include sp {
-        margin-top: 0.8rem;
-    }
-
-    @include sp-710 {
-        grid-template-columns: repeat(4, 16.75rem);
-    }
-}
-  
-.plan__table-cell {
-    border: 0.5px solid $color-text;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8.5rem; 
-    padding-top: 0.3rem;
-    @include sp {
-        padding-top: 0.5rem;
-    }
-
 
     h3 {
         @include text-style(2.2rem, calc(33/20));
@@ -154,27 +124,37 @@
     }
 }
 
+.plan__table-cell {
+    border: 0.5px solid $color-text;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
-
+}
 
 // ヘッダー
-.plan__table-header,
-.plan__table-empty {
-    display: flex;
-    align-items: flex-end;
+.plan__table-header-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: 5.5rem;
+    align-items: end; 
     
-    height: auto;
-    align-self: end;
+    @include sp {
+        margin-top: 0.8rem;
+        grid-template-columns: repeat(4, 16.75rem);
+    }
 }
 
 
-// 文字位置調節
 .plan__table-recommend {
-    padding-top: 1rem;
-    padding-bottom: 0.3rem;
+    height: 8rem; 
+    padding: 1rem 0.5rem 0.3rem 0.5rem;
     @include sp {
-        padding-top: 0.7rem;
-        padding-bottom: 0.5rem;
+        height: 8.5rem;
+        padding: 0.7rem 0.5rem 0.5rem 0.5rem;
     }
     span {
         @include text-style(1.7rem, calc(33/17));
@@ -182,24 +162,57 @@
 }
 
 .plan__table-normal {
-    padding-top: 1.1rem;
-    padding-bottom: 0.5rem;
+    height: 5rem; 
+    padding: 1.1rem 0.5rem 0.5rem 0.5rem;
     @include sp {
-        padding-top: 1rem;
-        padding-bottom: 0.7rem;
+        height: 7.5rem;
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
     }
 }
+
+// ボディ
+.plan__plan-table-body {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    
+    @include sp {
+        min-width: 67rem; // 4列 × 16.75rem = 67rem
+    }
+
+    th,
+    td {
+        border: 0.5px solid $color-text;
+        text-align: center;
+        vertical-align: middle;
+        height: 8.5rem; 
+        padding: 1rem 0.5rem;
+        
+        @include sp {
+            width: 16.75rem;
+            padding: 0.8rem 0.5rem;
+        }
+    }
+}
+
+.plan__table-title {
+    text-align: left !important;
+    padding-left: 2rem !important;
+}
+
+
+
+
 
 
 
 // タイトル
 .plan__table-title {
-      justify-content: flex-start;
-      padding-left: 2rem;
-      @include sp {
-        text-align: left;
-        padding-left: 1rem;
-      }
+    text-align: left;
+    padding: 1rem 0.5rem 1rem 2rem;
+    @include sp {
+        padding: 0.8rem 0.5rem 0.8rem 1rem;
+    }
 }
   
 
@@ -212,16 +225,32 @@
 .plan__table-ball-flex {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     line-height: 1;
+    height: 100%;
 }
 
 .plan__table-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
     span{
         width: 3rem;
-        margin-bottom: 0.5rem;
+        height: 0.1rem;
         border: 0.1rem solid #707070;
         display: block;
     }
+}
+
+.plan__table-ball-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .plan__table-ball {
@@ -238,35 +267,41 @@
     background-color: $color-text;
 }
 
-// テーブルの外周の縦線を削除し追加
-.plan__plan-table .plan__table-cell{
-    border-top: none;
-    border-bottom: none;
+// ヘッダー（CSS Grid）の境界線設定
+.plan__table-header-grid {
+    .plan__table-cell:nth-child(1) {
+        border-left: none;
+        border-top: none;
+    }
+    .plan__table-cell:nth-child(4) {
+        border-right: none;
+    }
+    .plan__table-cell:nth-child(2),
+    .plan__table-cell:nth-child(3),
+    .plan__table-cell:nth-child(4) {
+        border-top: none;
+    }
+    .plan__table-cell {
+        border-bottom: 0.5px solid $color-text;
+    }
 }
 
-.plan__plan-table .plan__table-cell:nth-child(4n + 1) {
-    border-left: none;
-}
-.plan__plan-table .plan__table-cell:nth-child(4n) {
-    border-right: none;
-}
-
-.plan__plan-table .plan__table-cell:nth-child(1) {
-    border-top: none;
-}
-
-.plan__plan-table .plan__table-cell:nth-child(1),
-.plan__plan-table .plan__table-cell:nth-child(2),
-.plan__plan-table .plan__table-cell:nth-child(3),
-.plan__plan-table .plan__table-cell:nth-child(4) {
-    border-bottom: 0.5px solid $color-text;
-}
-
-.plan__plan-table .plan__table-cell:nth-child(25),
-.plan__plan-table .plan__table-cell:nth-child(26),
-.plan__plan-table .plan__table-cell:nth-child(27),
-.plan__plan-table .plan__table-cell:nth-child(28) {
-    border-bottom: 0.5px solid $color-text;
+// テーブルボディの境界線設定
+.plan__plan-table-body {
+    th:first-child,
+    td:first-child {
+        border-left: none;
+    }
+     
+    th:last-child,
+    td:last-child {
+        border-right: none;
+    }
+     
+    tbody tr:last-child th,
+    tbody tr:last-child td {
+        border-bottom: 0.5px solid $color-text;
+    }
 }
 
 
@@ -295,11 +330,11 @@
 .plan__table-scroll::-webkit-scrollbar {
     height: 2.3rem;             // スクロールバー自体の太さ
 }
-  
+   
 .plan__table-scroll::-webkit-scrollbar-track {
     background:rgba(80, 80, 80, 0.15);     // スクロールバーの背景部分
 }
-  
+   
 .plan__table-scroll::-webkit-scrollbar-thumb {
     background-color: rgba(80, 80, 80, 0.25);    
 }
