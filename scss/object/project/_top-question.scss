@@ -74,9 +74,8 @@
 }
 
 .question__card-text {
-    // margin-left: 1.3rem;
     @include sp {
-        width: 23.3rem;
+        width: vw(23.3, 37.5);
         padding-left: 0.6rem;
     }
 }
