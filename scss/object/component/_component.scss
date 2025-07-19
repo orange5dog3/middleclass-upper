@@ -178,8 +178,9 @@
     flex-direction: column;
     gap: 1.6rem;
     flex: 1;
+    @include transition;
 
-    a:hover {
+    &:hover {
         @include hover-opacity;
     }
 }

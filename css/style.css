@@ -1326,8 +1326,10 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-.c-before-after__content a:hover {
+.c-before-after__content:hover {
   opacity: 0.5;
 }
 
