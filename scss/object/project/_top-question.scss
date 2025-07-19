@@ -26,6 +26,7 @@
     }
 }
 
+
 .question__card-q,
 .question__card-a {
     display: flex;
@@ -33,7 +34,8 @@
     padding: 1.75rem 3rem 1.75rem 2.9rem;
     gap: 2rem;
     @include sp {
-        padding: 1.7rem 1.5rem 0.9rem 0;
+        padding: 1.3rem 1.5rem 1.3rem 1rem;
+        gap: 2.5rem;
     }
 
     p {
@@ -49,6 +51,17 @@
     cursor: pointer;
 }
 
+.question__arrow {
+    width: 1.3rem;
+    height: auto;
+    transition: transform 0.3s;
+    margin-left: auto;
+}
+
+.question__card.is-open .question__arrow {
+    transform: rotate(180deg);
+}
+
 
 
 .question__card-a {
@@ -61,9 +74,8 @@
 }
 
 .question__card-text {
-    // margin-left: 1.3rem;
     @include sp {
-        width: 23.3rem;
+        width: vw(23.3, 37.5);
         padding-left: 0.6rem;
     }
 }
@@ -99,15 +111,4 @@
     &::after {
         background-color: $color-main;
     }
-}
-
-.question__arrow {
-    width: 1.3rem;
-    height: auto;
-    transition: transform .3s;
-    margin-left: auto;
-}
-
-.question__card.is-open .question__arrow {
-    transform: rotate(180deg);
 }
