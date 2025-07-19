@@ -21,6 +21,7 @@ footer {
 
     a {
         padding: 1rem;
+        @include transition;
         
         &:hover {
             @include hover-opacity;
@@ -68,6 +69,7 @@ footer {
     a {
         padding:0.5rem;
         margin-top: -0.5rem;
+        @include transition;
         
         &:hover {
             @include hover-opacity;

@@ -52,6 +52,7 @@
     height: inherit;
     position: relative;
     padding-left: 4.2rem;
+    @include transition;
     
     &:hover {
         @include hover-opacity;
@@ -119,6 +120,7 @@
             padding-inline: 1rem;
             display: flex;
             align-items: center;
+            @include transition;
             
             &:hover {
                 @include hover-opacity;
@@ -159,6 +161,7 @@
 .btn-header {
     @include text-style(1.5rem, calc(33/15));
     padding: 0.5rem 3rem!important;
+    @include transition;
     &:hover {
         @include hover-reversecolor;
         border: 0.1rem solid $color-main;
@@ -257,6 +260,7 @@
                     @include text-style(1.8rem, calc(33/18));
                     text-decoration: none;
                     color: $color-white;
+                    @include transition;
                     
                     &:hover {
                         background-color: $color-black;

@@ -223,6 +223,7 @@
     width: 25rem;
     height: 5rem;
     @include text-style(2.5rem, calc(33/25));
+    @include transition;
     @include sp {
         margin: 3.8rem auto 10.7rem;
         width: 33.5rem;
