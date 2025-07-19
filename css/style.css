@@ -769,6 +769,8 @@ a {
   height: inherit;
   position: relative;
   padding-left: 4.2rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .header__title-link:hover {
   opacity: 0.5;
@@ -855,6 +857,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .header__nav li a:hover {
   opacity: 0.5;
@@ -895,6 +899,8 @@ a {
   font-size: 1.5rem;
   line-height: 2.2;
   padding: 0.5rem 3rem !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .btn-header:hover {
   color: #CB0000;
@@ -996,6 +1002,8 @@ a {
   line-height: 1.8333333333;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .hamburger-menu nav ul li a:hover {
   background-color: #000000;
@@ -1056,6 +1064,8 @@ footer {
 }
 .footer__nav ul a {
   padding: 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .footer__nav ul a:hover {
   opacity: 0.5;
@@ -1119,6 +1129,8 @@ footer {
 .footer__sns ul a {
   padding: 0.5rem;
   margin-top: -0.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .footer__sns ul a:hover {
   opacity: 0.5;
@@ -2990,6 +3002,8 @@ footer {
   height: 5rem;
   font-size: 2.5rem;
   line-height: 1.32;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 @media screen and (max-width: 767px) {
   .btn-contact-form {
@@ -3042,6 +3056,8 @@ footer {
   height: 5rem;
   font-size: 2.5rem;
   line-height: 1.32;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 @media screen and (max-width: 767px) {
   .btn-contact-send {
@@ -4212,6 +4228,8 @@ footer {
   height: 5rem;
   font-size: 2.5rem;
   line-height: 1.32;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 @media screen and (max-width: 767px) {
   .btn-not-found {
