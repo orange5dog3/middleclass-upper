@@ -188,6 +188,11 @@
     flex: 1;
     h3 {
         @include text-style(2rem, calc(25/20));
+        display: -webkit-box;
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         @include sp {
             @include text-style(1.7rem, calc(28/17));
             margin-top: 0.8rem;
